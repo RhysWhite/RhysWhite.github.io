@@ -1,5 +1,27 @@
 {
-  "updated": null,
+  "updated": "2026-08-12T03:44:07.754135167Z",
   "source": "boast",
-  "metrics": {}
+  "snapshot": "20260812T034407Z-doi-10.64898-2026.07.26.740842.json",
+  "metrics": {
+    "citations": {
+      "value": 0,
+      "provider": "openalex",
+      "as_of": "2026-08-12T03:44:04.431603202Z"
+    },
+    "stars": {
+      "value": 1,
+      "provider": "github",
+      "as_of": "2026-08-12T03:44:04.415147082Z"
+    },
+    "release_downloads": {
+      "value": 0,
+      "provider": "github",
+      "as_of": "2026-08-12T03:44:04.415147082Z"
+    },
+    "downloads": {
+      "value": 37,
+      "provider": "bioconda",
+      "as_of": "2026-08-12T03:44:04.626387033Z"
+    }
+  }
 }
