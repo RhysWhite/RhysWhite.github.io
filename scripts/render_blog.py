@@ -23,6 +23,7 @@ BLOG_DATA = ROOT / "data" / "blog-posts.json"
 PUBLICATION_DATA = ROOT / "data" / "publications.json"
 BLOG_DIR = ROOT / "blog"
 POSTS_DIR = BLOG_DIR / "posts"
+SITEMAP_OUT = ROOT / "sitemap.xml"
 
 
 REQUIRED_PUBLISHED_FIELDS = [
@@ -293,6 +294,37 @@ def note_text(value: object, post: dict) -> str:
     return rendered
 
 
+def render_structured_data(post: dict, pub: dict, canonical: str) -> str:
+    """Return conservative BlogPosting JSON-LD for a Research Note."""
+    payload = {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": str(post["headline"]),
+        "description": str(post["standfirst"]),
+        "url": canonical,
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": canonical,
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Rhys White",
+            "url": "https://rhyswhite.github.io/about/",
+            "sameAs": [
+                "https://orcid.org/0000-0001-6620-758X",
+                "https://github.com/RhysWhite",
+                "https://scholar.google.com/citations?user=NwdWAb4AAAAJ&hl=en",
+            ],
+        },
+    }
+
+    return json.dumps(
+        payload,
+        ensure_ascii=False,
+        separators=(",", ":"),
+    ).replace("</", "<\\/")
+
+
 def render_post(post: dict, pub: dict) -> str:
     slug = str(post["slug"])
     canonical = f"https://rhyswhite.github.io/blog/posts/{slug}/"
@@ -314,6 +346,7 @@ def render_post(post: dict, pub: dict) -> str:
 <link rel="canonical" href="{canonical}">
 <link rel="icon" href="/assets/img/mark.svg" type="image/svg+xml">
 <link rel="stylesheet" href="/assets/css/site.css">
+<script type="application/ld+json">{render_structured_data(post, pub, canonical)}</script>
 </head>
 <body>
 {header("blog")}
@@ -438,6 +471,37 @@ def render_index(entries: list[tuple[dict, dict]]) -> str:
 </html>'''
 
 
+def render_sitemap(entries: list[tuple[dict, dict]]) -> str:
+    base = "https://rhyswhite.github.io"
+
+    urls = [
+        f"{base}/",
+        f"{base}/research/",
+        f"{base}/publications/",
+        f"{base}/software/",
+        f"{base}/blog/",
+        f"{base}/cv/",
+        f"{base}/about/",
+    ]
+
+    for post, _pub in entries:
+        urls.append(
+            f"{base}/blog/posts/{str(post['slug']).strip()}/"
+        )
+
+    items = "\n".join(
+        f"  <url><loc>{url}</loc></url>"
+        for url in urls
+    )
+
+    return (
+        '<?xml version="1.0" encoding="UTF-8"?>\n'
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+        f'{items}\n'
+        '</urlset>\n'
+    )
+
+
 def main() -> None:
     blog_payload = json.loads(BLOG_DATA.read_text(encoding="utf-8"))
     publications = publication_lookup()
@@ -477,6 +541,11 @@ def main() -> None:
 
     (BLOG_DIR / "index.html").write_text(
         render_index(published),
+        encoding="utf-8",
+    )
+
+    SITEMAP_OUT.write_text(
+        render_sitemap(published),
         encoding="utf-8",
     )
 
