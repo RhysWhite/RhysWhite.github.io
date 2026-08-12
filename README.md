@@ -110,3 +110,9 @@ This keeps scientific claims deliberate while allowing bibliographic and reach d
 ## Portrait
 
 Replace `assets/img/rhys-white.jpg` with a new image using the same filename to update the portrait everywhere it is used.
+
+## Website provenance
+
+The current website was rebuilt in 2026 as a framework-free static site using bespoke HTML, CSS, JavaScript and Python tooling. The repository previously used an Academic Pages/Minimal Mistakes-derived site; a repository provenance audit found no substantial retained code or code assets from that theme in the current implementation.
+
+External services and tools used by the current site include GitHub Pages, ORCID, OpenAlex, Altmetric and `boast`. Relevant acknowledgements are provided on the website and in the repository where appropriate.
