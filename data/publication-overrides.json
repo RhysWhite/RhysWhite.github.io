@@ -1,0 +1,307 @@
+{
+  "10.1099/mgen.0.001700": {
+    "tags": [
+      "outbreak",
+      "implementation",
+      "population"
+    ],
+    "labels": [
+      "genomic surveillance",
+      "Klebsiella",
+      "nanopore"
+    ]
+  },
+  "10.1016/j.drup.2025.101327": {
+    "tags": [
+      "mobile",
+      "outbreak",
+      "population"
+    ],
+    "labels": [
+      "OXA-48",
+      "plasmids",
+      "ST131"
+    ],
+    "year": 2025,
+    "authors": "White RT et al."
+  },
+  "10.1016/j.ijantimicag.2026.107801": {
+    "tags": [
+      "mobile",
+      "population"
+    ],
+    "labels": [
+      "mcr",
+      "plasmids",
+      "AMR surveillance"
+    ],
+    "authors": "Szeto J, White RT et al."
+  },
+  "10.1099/mgen.0.001644": {
+    "tags": [
+      "mobile",
+      "outbreak",
+      "implementation"
+    ],
+    "labels": [
+      "plasmids",
+      "hospital reservoirs",
+      "carbapenem resistance"
+    ]
+  },
+  "10.1128/msphere.00376-25": {
+    "title": "Comparative genomics of endemic Staphylococcus aureus ST1 in New Zealand",
+    "tags": [
+      "population",
+      "comparative"
+    ],
+    "labels": [
+      "Staphylococcus aureus",
+      "One Health",
+      "comparative genomics"
+    ]
+  },
+  "10.1099/mgen.0.001452": {
+    "tags": [
+      "population",
+      "mobile"
+    ],
+    "labels": [
+      "MRSA",
+      "mobile genetic elements",
+      "phylogenomics"
+    ]
+  },
+  "10.1186/s13756-025-01529-2": {
+    "tags": [
+      "outbreak",
+      "implementation"
+    ],
+    "labels": [
+      "NICU",
+      "outbreak",
+      "decentralised sequencing"
+    ]
+  },
+  "10.3201/eid3107.250289": {
+    "title": "Community outbreak of OXA-48–producing Escherichia coli linked to food premises, New Zealand, 2018–2022",
+    "tags": [
+      "outbreak",
+      "mobile"
+    ],
+    "labels": [
+      "OXA-48",
+      "outbreak",
+      "public health"
+    ]
+  },
+  "10.1038/s41467-025-62476-5": {
+    "tags": [
+      "population"
+    ],
+    "labels": [
+      "bacterial evolution",
+      "metabolism"
+    ]
+  },
+  "10.1099/mgen.0.001273": {
+    "tags": [
+      "outbreak",
+      "implementation"
+    ],
+    "labels": [
+      "MRSA",
+      "NICU",
+      "nanopore"
+    ]
+  },
+  "10.1038/s41467-024-45608-1": {
+    "tags": [
+      "population",
+      "mobile"
+    ],
+    "labels": [
+      "ST131",
+      "phylogenomics",
+      "AMR"
+    ]
+  },
+  "10.1038/s41467-024-48933-7": {
+    "tags": [
+      "population"
+    ],
+    "labels": [
+      "pathogen fitness",
+      "metabolism"
+    ]
+  },
+  "10.1099/mgen.0.001072": {
+    "tags": [
+      "comparative"
+    ],
+    "labels": [
+      "Chlamydia",
+      "comparative genomics"
+    ]
+  },
+  "10.1016/j.vetmic.2023.109704": {
+    "tags": [
+      "comparative"
+    ],
+    "labels": [
+      "Chlamydia",
+      "comparative genomics"
+    ],
+    "title": "The first genomic insight into Chlamydia psittaci sequence type (ST)24 from a healthy captive psittacine host in Australia demonstrates evolutionary proximity with strains from psittacine, human, and equine hosts"
+  },
+  "10.1099/mgen.0.000888": {
+    "tags": [
+      "comparative"
+    ],
+    "labels": [
+      "culture-independent",
+      "phylogenomics"
+    ]
+  },
+  "10.1099/mgen.0.000772": {
+    "tags": [
+      "comparative"
+    ],
+    "labels": [
+      "comparative genomics",
+      "phase variation"
+    ]
+  },
+  "10.3390/pathogens10121543": {
+    "tags": [
+      "comparative"
+    ],
+    "labels": [
+      "complete genomes",
+      "Chlamydia"
+    ]
+  },
+  "10.1071/MA21031": {
+    "tags": [
+      "amr"
+    ],
+    "labels": [
+      "AMR",
+      "review"
+    ]
+  },
+  "10.3389/fmicb.2020.01968": {
+    "tags": [
+      "population",
+      "mobile",
+      "comparative"
+    ],
+    "labels": [
+      "One Health",
+      "ST131",
+      "ST1193"
+    ]
+  },
+  "10.64898/2026.07.26.740842": {
+    "tags": [
+      "methods"
+    ],
+    "labels": [
+      "research software",
+      "phylogenomics",
+      "validation"
+    ]
+  },
+  "10.1071/ma26020": {
+    "tags": [
+      "mobile",
+      "population"
+    ],
+    "labels": [
+      "mobile DNA",
+      "genomic epidemiology",
+      "AMR"
+    ]
+  },
+  "10.1016/j.jhin.2025.11.020": {
+    "tags": [
+      "outbreak",
+      "implementation"
+    ],
+    "labels": [
+      "rapid genomics",
+      "infection control",
+      "outbreak analysis"
+    ]
+  },
+  "10.1016/j.jhin.2025.06.004": {
+    "tags": [
+      "outbreak",
+      "implementation",
+      "methods"
+    ],
+    "labels": [
+      "nanopore",
+      "SNV resolution",
+      "NICU"
+    ]
+  },
+  "10.1099/acmi.0.000894.v3": {
+    "tags": [
+      "population",
+      "comparative"
+    ],
+    "labels": [
+      "ST1193",
+      "complete genomes",
+      "AMR"
+    ]
+  },
+  "10.1017/ice.2024.77": {
+    "tags": [
+      "outbreak",
+      "implementation"
+    ],
+    "labels": [
+      "Clostridioides difficile",
+      "prospective surveillance",
+      "nanopore"
+    ]
+  },
+  "10.1099/mgen.0.001134": {
+    "tags": [
+      "comparative"
+    ],
+    "labels": [
+      "Chlamydia",
+      "avian genomics",
+      "reservoir hosts"
+    ]
+  },
+  "10.1099/mgen.0.001101": {
+    "tags": [
+      "comparative"
+    ],
+    "labels": [
+      "Pantoea",
+      "avian genomics",
+      "conservation"
+    ]
+  },
+  "10.1016/j.vetmic.2023.109774": {
+    "tags": [
+      "comparative"
+    ],
+    "labels": [
+      "Chlamydia",
+      "livestock",
+      "One Health"
+    ]
+  },
+  "10.1071/ma21031": {
+    "tags": [
+      "mobile",
+      "comparative"
+    ]
+  }
+}

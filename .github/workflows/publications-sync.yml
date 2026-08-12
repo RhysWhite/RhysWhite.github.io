@@ -1,0 +1,34 @@
+name: Refresh publications
+
+on:
+  schedule:
+    # Weekly is enough for a publication record and avoids unnecessary API traffic.
+    - cron: '17 3 * * 0'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Sync public ORCID works and render pages
+        env:
+          ORCID_ACCESS_TOKEN: ${{ secrets.ORCID_ACCESS_TOKEN }}
+          ORCID_CLIENT_ID: ${{ secrets.ORCID_CLIENT_ID }}
+          ORCID_CLIENT_SECRET: ${{ secrets.ORCID_CLIENT_SECRET }}
+        run: python scripts/sync_publications.py
+      - name: Commit updated publication data
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/publications.json publications/index.html cv/index.html
+          git diff --cached --quiet && exit 0
+          git commit -m "chore: refresh publications from ORCID"
+          git push

@@ -1,0 +1,60 @@
+name: Research software reach
+
+on:
+  schedule:
+    # Monthly: citations, downloads and stars do not need daily snapshots.
+    - cron: '0 3 1 * *'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+env:
+  BOAST_VERSION: '0.5.0'
+
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install pinned boast
+        run: |
+          set -euo pipefail
+          curl --proto '=https' --tlsv1.2 -LsSf "https://github.com/mbhall88/boast/releases/download/${BOAST_VERSION}/boast-installer.sh" | sh
+          echo "$HOME/.cargo/bin" >> "$GITHUB_PATH"
+
+      - name: Collect NEXCISION reach snapshot
+        id: boast
+        continue-on-error: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ALTMETRIC_KEY: ${{ secrets.ALTMETRIC_KEY }}
+        run: boast about impact/nexcision.toml --snapshot-dir impact/snapshots --wait-for-cohort-ranks=5m
+
+      - name: Update website metrics from newest snapshot
+        if: always()
+        run: |
+          set -euo pipefail
+          if find impact/snapshots -maxdepth 1 -name '*.json' -print -quit | grep -q .; then
+            python scripts/boast_to_site.py impact/snapshots data/impact/nexcision.json
+          else
+            echo "No boast snapshot was written; retaining last-known-good website metrics."
+          fi
+
+      - name: Commit snapshot and site metrics
+        if: always()
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add impact/snapshots data/impact/nexcision.json
+          git diff --cached --quiet && exit 0
+          git commit -m "chore: monthly research software reach snapshot"
+          git push
+
+      - name: Surface provider failures
+        if: steps.boast.outcome == 'failure'
+        run: |
+          echo "boast recorded one or more provider failures. Any partial snapshot was still preserved." >&2
+          exit 1

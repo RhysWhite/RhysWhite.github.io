@@ -1,0 +1,6 @@
+[[project]]
+identities = [
+  "doi:10.64898/2026.07.26.740842",
+  "github:RhysWhite/nexcision",
+  "conda:bioconda/nexcision",
+]

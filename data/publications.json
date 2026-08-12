@@ -1,0 +1,486 @@
+{
+  "orcid": "0000-0001-6620-758X",
+  "generated": "2026-08-12",
+  "publications": [
+    {
+      "year": 2026,
+      "title": "Mobile DNA as epidemiological engines: lessons from New Zealand",
+      "authors": "White RT",
+      "journal": "Microbiology Australia",
+      "citation": "MA26020",
+      "doi": "10.1071/MA26020",
+      "tags": [
+        "mobile",
+        "population"
+      ],
+      "labels": [
+        "mobile DNA",
+        "genomic epidemiology",
+        "AMR"
+      ]
+    },
+    {
+      "year": 2026,
+      "title": "Decentralized nanopore genomics reveals diverse Klebsiella pneumoniae and no evidence of patient–patient transmission in a New Zealand hospital",
+      "authors": "White RT et al.",
+      "journal": "Microbial Genomics",
+      "citation": "12:001700",
+      "doi": "10.1099/mgen.0.001700",
+      "tags": [
+        "outbreak",
+        "implementation",
+        "population"
+      ],
+      "labels": [
+        "genomic surveillance",
+        "Klebsiella",
+        "nanopore"
+      ]
+    },
+    {
+      "year": 2026,
+      "title": "Mobile colistin resistance in New Zealand without local agricultural colistin use: genomic insights into mcr-carrying plasmids and their global context, 1984–2024",
+      "authors": "Szeto J, White RT et al.",
+      "journal": "International Journal of Antimicrobial Agents",
+      "citation": "67:107801",
+      "doi": "10.1016/j.ijantimicag.2026.107801",
+      "tags": [
+        "mobile",
+        "population"
+      ],
+      "labels": [
+        "mcr",
+        "plasmids",
+        "AMR surveillance"
+      ]
+    },
+    {
+      "year": 2026,
+      "title": "Resolving plasmid-encoded carbapenem resistance dynamics and reservoirs in a hospital setting through nanopore sequencing",
+      "authors": "Sauerborn E, White RT et al.",
+      "journal": "Microbial Genomics",
+      "citation": "12:001644",
+      "doi": "10.1099/mgen.0.001644",
+      "tags": [
+        "mobile",
+        "outbreak",
+        "implementation"
+      ],
+      "labels": [
+        "plasmids",
+        "hospital reservoirs",
+        "carbapenem resistance"
+      ]
+    },
+    {
+      "year": 2026,
+      "title": "The need for speed: ultra-rapid high-resolution outbreak analysis in a front-line hospital microbiology laboratory",
+      "authors": "Bloomfield M et al., White RT",
+      "journal": "Journal of Hospital Infection",
+      "citation": "168:48–57",
+      "doi": "10.1016/j.jhin.2025.11.020",
+      "tags": [
+        "outbreak",
+        "implementation"
+      ],
+      "labels": [
+        "rapid genomics",
+        "infection control",
+        "outbreak analysis"
+      ]
+    },
+    {
+      "year": 2026,
+      "title": "NEXCISION: exact, validated, and scalable excision of genomic regions from phylogenomic NEXUS matrices",
+      "authors": "White RT",
+      "journal": "bioRxiv",
+      "citation": "2026.07.26.740842",
+      "doi": "10.64898/2026.07.26.740842",
+      "tags": [
+        "methods"
+      ],
+      "labels": [
+        "research software",
+        "phylogenomics",
+        "validation"
+      ],
+      "type": "preprint"
+    },
+    {
+      "year": 2025,
+      "title": "Integration of blaOXA-48 into a Col156 plasmid drove a carbapenem-resistant Escherichia coli ST131 outbreak in New Zealand: global genomic evidence for the gene’s multilayered dissemination",
+      "authors": "White RT et al.",
+      "journal": "Drug Resistance Updates",
+      "citation": "84:101327",
+      "doi": "10.1016/j.drup.2025.101327",
+      "tags": [
+        "mobile",
+        "outbreak",
+        "population"
+      ],
+      "labels": [
+        "OXA-48",
+        "plasmids",
+        "ST131"
+      ]
+    },
+    {
+      "year": 2025,
+      "title": "20 years later: unravelling the genomic success of New Zealand’s home-grown AK3 community-associated methicillin-resistant Staphylococcus aureus",
+      "authors": "White RT et al.",
+      "journal": "Microbial Genomics",
+      "citation": "11:001452",
+      "doi": "10.1099/mgen.0.001452",
+      "tags": [
+        "population",
+        "mobile"
+      ],
+      "labels": [
+        "MRSA",
+        "mobile genetic elements",
+        "phylogenomics"
+      ]
+    },
+    {
+      "year": 2025,
+      "title": "Community outbreak of OXA-48–producing Escherichia coli linked to food premises, New Zealand, 2018–2022",
+      "authors": "Thornley CN et al., White RT",
+      "journal": "Emerging Infectious Diseases",
+      "citation": "31:1300–1308",
+      "doi": "10.3201/eid3107.250289",
+      "tags": [
+        "outbreak",
+        "mobile"
+      ],
+      "labels": [
+        "OXA-48",
+        "outbreak",
+        "public health"
+      ]
+    },
+    {
+      "year": 2025,
+      "title": "Comparative genomics of endemic Staphylococcus aureus ST1 in New Zealand",
+      "authors": "Voss EM et al., White RT",
+      "journal": "mSphere",
+      "citation": "10:e00376-25",
+      "doi": "10.1128/msphere.00376-25",
+      "tags": [
+        "population",
+        "comparative"
+      ],
+      "labels": [
+        "Staphylococcus aureus",
+        "One Health",
+        "comparative genomics"
+      ]
+    },
+    {
+      "year": 2025,
+      "title": "Convergent evolution of distinct D-ribulose utilisation pathways in attaching and effacing pathogens",
+      "authors": "Cottam C, Bowran K, White RT et al.",
+      "journal": "Nature Communications",
+      "citation": "16:6976",
+      "doi": "10.1038/s41467-025-62476-5",
+      "tags": [
+        "population"
+      ],
+      "labels": [
+        "bacterial evolution",
+        "metabolism"
+      ]
+    },
+    {
+      "year": 2025,
+      "title": "Implementing nanopore sequencing in a clinical laboratory: a social systems case study",
+      "authors": "Manning S et al., White RT",
+      "journal": "New Zealand Journal of Medical Laboratory Science",
+      "citation": "79(1):25–30",
+      "doi": "",
+      "url": "https://research.esr.cri.nz/articles/journal_contribution/Implementing_nanopore_sequencing_in_a_clinical_laboratory_a_social_systems_case_study/29755931",
+      "tags": [
+        "implementation"
+      ],
+      "labels": [
+        "clinical implementation",
+        "nanopore",
+        "distributed sequencing"
+      ]
+    },
+    {
+      "year": 2025,
+      "title": "Resolving a neonatal intensive care unit outbreak of meticillin-resistant Staphylococcus aureus to the single-nucleotide variant level using Oxford Nanopore simplex reads and HERRO error correction",
+      "authors": "Bloomfield M et al., White RT",
+      "journal": "Journal of Hospital Infection",
+      "citation": "163:72–77",
+      "doi": "10.1016/j.jhin.2025.06.004",
+      "tags": [
+        "outbreak",
+        "implementation",
+        "methods"
+      ],
+      "labels": [
+        "nanopore",
+        "SNV resolution",
+        "NICU"
+      ]
+    },
+    {
+      "year": 2025,
+      "title": "The rapid detection of a neonatal unit outbreak of a wild-type Klebsiella variicola using decentralized Oxford Nanopore sequencing",
+      "authors": "White RT et al.",
+      "journal": "Antimicrobial Resistance & Infection Control",
+      "citation": "14:6",
+      "doi": "10.1186/s13756-025-01529-2",
+      "tags": [
+        "outbreak",
+        "implementation"
+      ],
+      "labels": [
+        "NICU",
+        "outbreak",
+        "decentralised sequencing"
+      ]
+    },
+    {
+      "year": 2024,
+      "title": "Early identification of a ward-based outbreak of Clostridioides difficile using prospective multilocus sequence type-based Oxford Nanopore genomic surveillance",
+      "authors": "Bloomfield M et al., White RT",
+      "journal": "Infection Control & Hospital Epidemiology",
+      "citation": "45(9):1057–1063",
+      "doi": "10.1017/ice.2024.77",
+      "tags": [
+        "outbreak",
+        "implementation"
+      ],
+      "labels": [
+        "Clostridioides difficile",
+        "prospective surveillance",
+        "nanopore"
+      ]
+    },
+    {
+      "year": 2024,
+      "title": "Genomic epidemiology reveals geographical clustering of multidrug-resistant Escherichia coli ST131 associated with bacteraemia in Wales",
+      "authors": "White RT et al.",
+      "journal": "Nature Communications",
+      "citation": "15:1371",
+      "doi": "10.1038/s41467-024-45608-1",
+      "tags": [
+        "population",
+        "mobile"
+      ],
+      "labels": [
+        "ST131",
+        "phylogenomics",
+        "AMR"
+      ]
+    },
+    {
+      "year": 2024,
+      "title": "Metabolism of L-arabinose converges with virulence regulation to promote enteric pathogen fitness",
+      "authors": "Cottam C, White RT et al.",
+      "journal": "Nature Communications",
+      "citation": "15:4462",
+      "doi": "10.1038/s41467-024-48933-7",
+      "tags": [
+        "population"
+      ],
+      "labels": [
+        "pathogen fitness",
+        "metabolism"
+      ]
+    },
+    {
+      "year": 2024,
+      "title": "Rapid identification and subsequent contextualization of an outbreak of methicillin-resistant Staphylococcus aureus in a neonatal intensive care unit using nanopore sequencing",
+      "authors": "White RT et al.",
+      "journal": "Microbial Genomics",
+      "citation": "10:001273",
+      "doi": "10.1099/mgen.0.001273",
+      "tags": [
+        "outbreak",
+        "implementation"
+      ],
+      "labels": [
+        "MRSA",
+        "NICU",
+        "nanopore"
+      ]
+    },
+    {
+      "year": 2024,
+      "title": "The complete genome sequence of five pre-2013 Escherichia coli sequence type (ST)1193 strains reveals insights into an emerging pathogen",
+      "authors": "White RT et al.",
+      "journal": "Access Microbiology",
+      "citation": "6:000894",
+      "doi": "10.1099/acmi.0.000894.v3",
+      "tags": [
+        "population",
+        "comparative"
+      ],
+      "labels": [
+        "ST1193",
+        "complete genomes",
+        "AMR"
+      ]
+    },
+    {
+      "year": 2023,
+      "title": "A discovery down under: decoding the draft genome sequence of Pantoea stewartii from Australia’s Critically Endangered western ground parrot/kyloring (Pezoporus flaviventris)",
+      "authors": "White RT et al.",
+      "journal": "Microbial Genomics",
+      "citation": "9:001101",
+      "doi": "10.1099/mgen.0.001101",
+      "tags": [
+        "comparative"
+      ],
+      "labels": [
+        "Pantoea",
+        "avian genomics",
+        "conservation"
+      ]
+    },
+    {
+      "year": 2023,
+      "title": "Draft genomes of novel avian Chlamydia abortus strains from Australian Torresian crows (Corvus orru) shed light on possible reservoir hosts and evolutionary pathways",
+      "authors": "Kasimov V, White RT, Jelocnik M",
+      "journal": "Microbial Genomics",
+      "citation": "9:001134",
+      "doi": "10.1099/mgen.0.001134",
+      "tags": [
+        "comparative"
+      ],
+      "labels": [
+        "Chlamydia",
+        "avian genomics",
+        "reservoir hosts"
+      ]
+    },
+    {
+      "year": 2023,
+      "title": "Molecular characterisation of the Australian and New Zealand livestock Chlamydia pecorum strains confirms novel but clonal ST23 in association with ovine foetal loss",
+      "authors": "Jelocnik M, White RT et al.",
+      "journal": "Veterinary Microbiology",
+      "citation": "283:109774",
+      "doi": "10.1016/j.vetmic.2023.109774",
+      "tags": [
+        "comparative"
+      ],
+      "labels": [
+        "Chlamydia",
+        "livestock",
+        "One Health"
+      ]
+    },
+    {
+      "year": 2023,
+      "title": "The first genomic insight into Chlamydia psittaci sequence type (ST)24 from a healthy captive psittacine host in Australia demonstrates evolutionary proximity with strains from psittacine, human, and equine hosts",
+      "authors": "White RT et al.",
+      "journal": "Veterinary Microbiology",
+      "citation": "109704",
+      "doi": "10.1016/j.vetmic.2023.109704",
+      "tags": [
+        "comparative"
+      ],
+      "labels": [
+        "Chlamydia",
+        "comparative genomics"
+      ]
+    },
+    {
+      "year": 2023,
+      "title": "Whole-genome sequencing of Chlamydia psittaci from Australasian avian hosts: a genomics approach to a pathogen that still ruffles feathers",
+      "authors": "White RT et al.",
+      "journal": "Microbial Genomics",
+      "citation": "9:001072",
+      "doi": "10.1099/mgen.0.001072",
+      "tags": [
+        "comparative"
+      ],
+      "labels": [
+        "Chlamydia",
+        "comparative genomics"
+      ]
+    },
+    {
+      "year": 2022,
+      "title": "One clone to rule them all: culture-independent genomics of Chlamydia psittaci from equine and avian hosts in Australia",
+      "authors": "White RT et al.",
+      "journal": "Microbial Genomics",
+      "citation": "8:000888",
+      "doi": "10.1099/mgen.0.000888",
+      "tags": [
+        "comparative"
+      ],
+      "labels": [
+        "culture-independent",
+        "phylogenomics"
+      ]
+    },
+    {
+      "year": 2022,
+      "title": "Phase variation in the glycosyltransferase genes of Pasteurella multocida associated with outbreaks of fowl cholera on free-range layer farms",
+      "authors": "Omalekia L et al., White RT",
+      "journal": "Microbial Genomics",
+      "citation": "8:000772",
+      "doi": "10.1099/mgen.0.000772",
+      "tags": [
+        "comparative"
+      ],
+      "labels": [
+        "comparative genomics",
+        "phase variation"
+      ]
+    },
+    {
+      "year": 2021,
+      "title": "Completing the genome sequence of Chlamydia pecorum strains MC/MarsBar and DBDeUG: new insights into this enigmatic koala pathogen",
+      "authors": "White RT et al.",
+      "journal": "Pathogens",
+      "citation": "10:1543",
+      "doi": "10.3390/pathogens10121543",
+      "tags": [
+        "comparative"
+      ],
+      "labels": [
+        "complete genomes",
+        "Chlamydia"
+      ]
+    },
+    {
+      "year": 2021,
+      "title": "Escherichia coli: placing resistance to third-generation cephalosporins and fluoroquinolones in Australia and New Zealand into perspective",
+      "authors": "White RT",
+      "journal": "Microbiology Australia",
+      "citation": "42:104–110",
+      "doi": "10.1071/MA21031",
+      "tags": [
+        "mobile",
+        "comparative"
+      ],
+      "labels": [
+        "AMR",
+        "review"
+      ]
+    },
+    {
+      "year": 2020,
+      "title": "Companion animals are spillover hosts of the multidrug-resistant human extraintestinal Escherichia coli pandemic clones ST131 and ST1193",
+      "authors": "Kidsley AK, White RT et al.",
+      "journal": "Frontiers in Microbiology",
+      "citation": "11:1968",
+      "doi": "10.3389/fmicb.2020.01968",
+      "tags": [
+        "population",
+        "mobile",
+        "comparative"
+      ],
+      "labels": [
+        "One Health",
+        "ST131",
+        "ST1193"
+      ]
+    }
+  ]
+}

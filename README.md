@@ -1,29 +1,112 @@
-A Github Pages template for academic websites. This was forked from [Philip Leftwich](https://github.com/Philip-Leftwich) and was originally forked (then detached) by [Stuart Geiger](https://github.com/staeiou) from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/), which is © 2016 Michael Rose and released under the MIT License. See LICENSE.md.
+# Rhys White — personal website
 
-### Note: if you are using this repo and now get a notification about a security vulnerability, delete the Gemfile.lock file. 
+Framework-free GitHub Pages site for `https://rhyswhite.github.io/`.
 
-# Instructions
+The site is plain HTML, CSS and a small amount of JavaScript. There is no Jekyll theme, Ruby environment, Node package tree or site-build dependency. GitHub Pages can publish the repository root directly.
 
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Fork [this repository](https://github.com/academicpages/academicpages.github.io) by clicking the "fork" button in the top right. 
-1. Go to the repository's settings (rightmost item in the tabs that start with "Code", should be below "Unwatch"). Rename the repository "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and create content & metadata (see below -- also see [this set of diffs](http://archive.is/3TPas) showing what files were changed to set up [an example site](https://getorg-testacct.github.io) for a user with the username "getorg-testacct")
-1. Upload any files (like PDFs, .zip files, etc.) to the files/ directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.  
-1. Check status by going to the repository settings, in the "GitHub pages" section
-1. (Optional) Use the Jupyter notebooks or python scripts in the `markdown_generator` folder to generate markdown files for publications and talks from a TSV file.
+## Site structure
 
-See more info at https://academicpages.github.io/
+- `index.html` — homepage
+- `research/index.html` — research programme
+- `publications/index.html` — generated publication record + live Altmetric badges
+- `software/index.html` — research software + `boast`-backed reach metrics
+- `cv/index.html` — generated browser-native CV; **Print / save PDF** uses the browser print engine
+- `about/index.html` — short professional profile
+- `data/publications.json` — single publication dataset used by both Publications and CV
+- `data/publication-overrides.json` — curated topic labels kept separate from bibliographic metadata
+- `data/impact/nexcision.json` — last-known-good software reach values shown by the website
+- `impact/nexcision.toml` — `boast` manifest for NEXCISION
+- `scripts/` — publication/metric update scripts
+- `.github/workflows/` — scheduled publication and software-reach refreshes
 
-## To run locally (not on GitHub Pages, to serve on your own computer)
+## Publish with GitHub Pages
 
-1. Clone the repository and made updates as detailed above
-1. Make sure you have ruby-dev, bundler, and nodejs installed: `sudo apt install ruby-dev ruby-bundler nodejs`
-1. Run `bundle clean` to clean up the directory (no need to run `--force`)
-1. Run `bundle install` to install ruby dependencies. If you get errors, delete Gemfile.lock and try again.
-1. Run `bundle exec jekyll liveserve` to generate the HTML and serve it from `localhost:4000` the local server will automatically rebuild and refresh the pages on change.
+In the GitHub repository:
 
-# Changelog -- bugfixes and enhancements
+1. Open **Settings → Pages**.
+2. Under **Build and deployment**, choose **Deploy from a branch**.
+3. Select the default branch and `/ (root)`.
+4. Save.
 
-There is one logistical issue with a ready-to-fork template theme like academic pages that makes it a little tricky to get bug fixes and updates to the core theme. If you fork this repository, customize it, then pull again, you'll probably get merge conflicts. If you want to save your various .yml configuration files and markdown files, you can delete the repository and fork it again. Or you can manually patch. 
+The committed `.nojekyll` file ensures GitHub serves the static files directly.
 
-To support this, all changes to the underlying code appear as a closed issue with the tag 'code change' -- get the list [here](https://github.com/academicpages/academicpages.github.io/issues?q=is%3Aclosed%20is%3Aissue%20label%3A%22code%20change%22%20). Each issue thread includes a comment linking to the single commit or a diff across multiple commits, so those with forked repositories can easily identify what they need to patch.
+## Automatic publications: ORCID → site
+
+`publications/index.html` and the publication section of `cv/index.html` are generated from the same `data/publications.json` file.
+
+`.github/workflows/publications-sync.yml` runs weekly. It:
+
+1. reads public DOI-bearing works from ORCID `0000-0001-6620-758X`;
+2. enriches DOI metadata with Crossref when available;
+3. merges curated local topic labels;
+4. preserves the previous data if a provider is unavailable;
+5. re-renders both Publications and CV;
+6. commits only if something changed.
+
+### One-time ORCID setup
+
+The supported ORCID Public API uses a read-only `/read-public` access token. Register a Public API client in ORCID, then add `ORCID_CLIENT_ID` and `ORCID_CLIENT_SECRET` under **Settings → Secrets and variables → Actions**. The workflow obtains the long-lived read-public token automatically.
+
+Alternatively, if you already have a `/read-public` token, add it as `ORCID_ACCESS_TOKEN`.
+
+After that, publication discovery is automatic. To test it immediately, open **Actions → Refresh publications → Run workflow**.
+
+Curated publications without a DOI are retained locally during ORCID refreshes, so a legitimate non-DOI article cannot disappear simply because ORCID discovery is DOI-based.
+
+### Curating publication topics
+
+Bibliographic metadata is automated; scientific categorisation is not delegated to an API.
+
+Edit `data/publication-overrides.json` to assign site filters and compact labels to a DOI. The public filters are deliberately scientific rather than bibliometric: **Outbreak genomics**, **AMR & mobile elements**, **Nanopore implementation**, **Bacterial population genomics**, **Comparative / veterinary genomics**, and **Methods / software**. Publications can belong to more than one theme. New ORCID works without an override receive conservative title-based tags until you curate them. Use `"exclude": true` for a DOI that should remain in ORCID but not appear on the website.
+
+Run locally after changing data:
+
+```bash
+python scripts/render_publications.py
+```
+
+## Altmetric
+
+The Publications page uses Altmetric's official DOI badge embed. Badges are live and hide themselves when an output has no tracked mentions. Scores are **not** copied into the repository, so they cannot become stale.
+
+No Altmetric API key is required for those visible badges.
+
+An optional `ALTMETRIC_KEY` repository secret can also be supplied to `boast` if you have access to an Altmetric Details Page API key. That is separate from the public badge embed.
+
+## Research-software reach with `boast`
+
+`.github/workflows/impact-snapshot.yml` runs monthly for NEXCISION using `impact/nexcision.toml`.
+
+It tracks the linked project across:
+
+- GitHub — stars and release downloads
+- Bioconda — package downloads
+- scholarly providers — citation/attention measures supported by `boast`
+- Altmetric — only when `ALTMETRIC_KEY` is available
+
+The workflow commits the raw timestamped `boast` snapshots in `impact/snapshots/` and converts the newest usable values into `data/impact/nexcision.json` for the site.
+
+Provider failures do not blank the public website. The last valid committed metrics remain visible, while the failed Action still turns red so the problem is not hidden.
+
+The workflow currently pins `boast` to `0.5.0`; update `BOAST_VERSION` deliberately when adopting a newer release.
+
+To initialise metrics immediately, open **Actions → Research software reach → Run workflow**.
+
+## Google Scholar
+
+Google Scholar remains prominently linked as the citation-profile destination. The site does not scrape Scholar: there is no supported public Google Scholar API suitable for a maintainable publication sync.
+
+## Updating core content
+
+The main narrative pages remain intentionally hand-curated:
+
+- `index.html`
+- `research/index.html`
+- `software/index.html`
+- `about/index.html`
+
+This keeps scientific claims deliberate while allowing bibliographic and reach data to update automatically.
+
+## Portrait
+
+Replace `assets/img/rhys-white.jpg` with a new image using the same filename to update the portrait everywhere it is used.

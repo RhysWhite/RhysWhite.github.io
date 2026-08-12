@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://rhyswhite.github.io/sitemap.xml
