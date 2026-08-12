@@ -13,6 +13,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data" / "publications.json"
 OVERRIDES = ROOT / "data" / "publication-overrides.json"
+METRICS = ROOT / "data" / "publication-metrics.json"
 PUBLICATIONS_OUT = ROOT / "publications" / "index.html"
 CV_OUT = ROOT / "cv" / "index.html"
 
@@ -90,10 +91,25 @@ def pub_article(pub: dict) -> str:
     doi = str(pub.get("doi") or "").strip()
     target = pub_target(pub)
     label_html = "".join(f'<span class="pub-tag">{esc(label)}</span>' for label in labels)
+
+    citation_html = ""
+    citation_count = pub.get("openalex_citations")
+    openalex_url = str(pub.get("openalex_url") or "").strip()
+    if isinstance(citation_count, int) and citation_count > 0:
+        citation_text = f"OpenAlex citations: {citation_count}"
+        if openalex_url:
+            citation_html = (
+                f'<a class="pub-citations" href="{esc(openalex_url)}">'
+                f'{citation_text}</a>'
+            )
+        else:
+            citation_html = f'<span class="pub-citations">{citation_text}</span>'
+
     impact = ""
     if doi:
         impact = (
             '<div class="pub-impact">'
+            f'{citation_html}'
             f'<div class="altmetric-embed" data-badge-type="donut" data-badge-popover="right" '
             f'data-hide-no-mentions="true" data-doi="{esc(doi)}"></div>'
             f'<a class="pub-doi" href="{target}">DOI →</a>'
@@ -191,6 +207,8 @@ def render_cv(data: dict) -> str:
 def main() -> None:
     data = json.loads(DATA.read_text(encoding="utf-8"))
     overrides = json.loads(OVERRIDES.read_text(encoding="utf-8")) if OVERRIDES.exists() else {}
+    metrics_data = json.loads(METRICS.read_text(encoding="utf-8")) if METRICS.exists() else {}
+    metrics = metrics_data.get("metrics", {})
     publications = []
     for original in data.get("publications", []):
         pub = dict(original)
@@ -200,6 +218,13 @@ def main() -> None:
             continue
         if override:
             pub.update({k: v for k, v in override.items() if k != "exclude"})
+
+        metric = metrics.get(doi, {}) if doi else {}
+        citations = metric.get("citations")
+        if isinstance(citations, int) and citations > 0:
+            pub["openalex_citations"] = citations
+            pub["openalex_url"] = metric.get("openalex_id", "")
+
         publications.append(pub)
     data["publications"] = publications
     PUBLICATIONS_OUT.parent.mkdir(parents=True, exist_ok=True)

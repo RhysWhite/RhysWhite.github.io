@@ -1,0 +1,151 @@
+{
+  "updated": "2026-08-12T03:49:11.025675+00:00",
+  "provider": "openalex",
+  "metrics": {
+    "10.1038/s41467-024-45608-1": {
+      "citations": 19,
+      "provider": "openalex",
+      "openalex_id": "https://openalex.org/W4391808092"
+    },
+    "10.3389/fmicb.2020.01968": {
+      "citations": 64,
+      "provider": "openalex",
+      "openalex_id": "https://openalex.org/W3082530379"
+    },
+    "10.1099/mgen.0.000888": {
+      "citations": 25,
+      "provider": "openalex",
+      "openalex_id": "https://openalex.org/W4307033842"
+    },
+    "10.1099/mgen.0.001072": {
+      "citations": 19,
+      "provider": "openalex",
+      "openalex_id": "https://openalex.org/W4385186366"
+    },
+    "10.1017/ice.2024.77": {
+      "citations": 17,
+      "provider": "openalex",
+      "openalex_id": "https://openalex.org/W4396675706"
+    },
+    "10.1099/mgen.0.001273": {
+      "citations": 16,
+      "provider": "openalex",
+      "openalex_id": "https://openalex.org/W4400356623"
+    },
+    "10.1071/ma21031": {
+      "citations": 14,
+      "provider": "openalex",
+      "openalex_id": "https://openalex.org/W3196331115"
+    },
+    "10.1038/s41467-024-48933-7": {
+      "citations": 13,
+      "provider": "openalex",
+      "openalex_id": "https://openalex.org/W4399022086"
+    },
+    "10.1186/s13756-025-01529-2": {
+      "citations": 13,
+      "provider": "openalex",
+      "openalex_id": "https://openalex.org/W4407251928"
+    },
+    "10.3201/eid3107.250289": {
+      "citations": 7,
+      "provider": "openalex",
+      "openalex_id": "https://openalex.org/W4411604010"
+    },
+    "10.1016/j.drup.2025.101327": {
+      "citations": 5,
+      "provider": "openalex",
+      "openalex_id": "https://openalex.org/W4416427192"
+    },
+    "10.1016/j.jhin.2025.06.004": {
+      "citations": 4,
+      "provider": "openalex",
+      "openalex_id": "https://openalex.org/W4411589579"
+    },
+    "10.3390/pathogens10121543": {
+      "citations": 16,
+      "provider": "openalex",
+      "openalex_id": "https://openalex.org/W3215620685"
+    },
+    "10.1099/mgen.0.000772": {
+      "citations": 9,
+      "provider": "openalex",
+      "openalex_id": "https://openalex.org/W4220965465"
+    },
+    "10.1016/j.vetmic.2023.109774": {
+      "citations": 9,
+      "provider": "openalex",
+      "openalex_id": "https://openalex.org/W4376113217"
+    },
+    "10.1099/acmi.0.000894.v3": {
+      "citations": 4,
+      "provider": "openalex",
+      "openalex_id": "https://openalex.org/W4403541283"
+    },
+    "10.1016/j.jhin.2025.11.020": {
+      "citations": 2,
+      "provider": "openalex",
+      "openalex_id": "https://openalex.org/W4416812725"
+    },
+    "10.1099/mgen.0.001644": {
+      "citations": 2,
+      "provider": "openalex",
+      "openalex_id": "https://openalex.org/W7128690917"
+    },
+    "10.1016/j.vetmic.2023.109704": {
+      "citations": 7,
+      "provider": "openalex",
+      "openalex_id": "https://openalex.org/W4321487280"
+    },
+    "10.1099/mgen.0.001101": {
+      "citations": 6,
+      "provider": "openalex",
+      "openalex_id": "https://openalex.org/W4386407720"
+    },
+    "10.1099/mgen.0.001134": {
+      "citations": 5,
+      "provider": "openalex",
+      "openalex_id": "https://openalex.org/W4388911674"
+    },
+    "10.1099/mgen.0.001452": {
+      "citations": 4,
+      "provider": "openalex",
+      "openalex_id": "https://openalex.org/W4412653460"
+    },
+    "10.1128/msphere.00376-25": {
+      "citations": 1,
+      "provider": "openalex",
+      "openalex_id": "https://openalex.org/W4414425448"
+    },
+    "10.1016/j.ijantimicag.2026.107801": {
+      "citations": 1,
+      "provider": "openalex",
+      "openalex_id": "https://openalex.org/W7148379670"
+    },
+    "10.1099/mgen.0.001700": {
+      "citations": 1,
+      "provider": "openalex",
+      "openalex_id": "https://openalex.org/W7159158363"
+    },
+    "10.64898/2026.02.16.706128": {
+      "citations": 1,
+      "provider": "openalex",
+      "openalex_id": "https://openalex.org/W7130332326"
+    },
+    "10.1038/s41467-025-62476-5": {
+      "citations": 0,
+      "provider": "openalex",
+      "openalex_id": "https://openalex.org/W4412785781"
+    },
+    "10.1071/ma26020": {
+      "citations": 0,
+      "provider": "openalex",
+      "openalex_id": "https://openalex.org/W7167799498"
+    },
+    "10.64898/2026.07.26.740842": {
+      "citations": 0,
+      "provider": "openalex",
+      "openalex_id": "https://openalex.org/W7171686650"
+    }
+  }
+}
