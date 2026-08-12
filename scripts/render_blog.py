@@ -380,12 +380,12 @@ def render_post(post: dict, pub: dict) -> str:
 
 <section class="note-section">
 <h2>What does it mean?</h2>
-<p>{note_text(post["meaning"], post)}</p>
+{render_paragraphs(post["meaning"], post)}
 </section>
 
 <section class="note-section">
 <h2>What does it not show?</h2>
-<p>{note_text(post["limitations"], post)}</p>
+{render_paragraphs(post["limitations"], post)}
 </section>
 
 {render_paper(post, pub)}
@@ -406,6 +406,17 @@ def render_post(post: dict, pub: dict) -> str:
 <script src="/assets/js/site.js"></script>
 </body>
 </html>'''
+
+
+def render_paragraphs(value, post: dict) -> str:
+    """Render either one paragraph or a list of paragraphs."""
+    if isinstance(value, list):
+        return "".join(
+            f"<p>{note_text(item, post)}</p>"
+            for item in value
+        )
+
+    return f"<p>{note_text(value, post)}</p>"
 
 
 def render_index(entries: list[tuple[dict, dict]]) -> str:

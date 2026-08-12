@@ -109,6 +109,59 @@
         "Gebhardt F",
         "Urban L"
       ]
+    },
+    {
+      "slug": "colistin-resistance-global-plasmids-new-zealand",
+      "doi": "10.1016/j.ijantimicag.2026.107801",
+      "status": "published",
+      "note_date": "2026-08-13",
+      "paper_date": "2026-04-02",
+      "headline": "Colistin resistance can travel even without local agricultural colistin use",
+      "standfirst": "New Zealand has never licensed colistin for use in food-producing animals, yet mobile colistin-resistance genes occur in clinical bacteria here. By resolving New Zealand genomes and comparing them with 1,543 mcr-carrying plasmids from around the world, we found that resistance is tied to globally successful plasmid backbones, not simply to where colistin is being used.",
+      "short_version": "Finding an mcr resistance gene is only part of the story. The same genes can travel on recurring plasmid backbones, and those plasmids can also carry resistance to other antimicrobials. This means that resistance may persist or arrive in places where direct selection from colistin itself is limited, and that surveillance needs to track the mobile DNA carrying the gene as well as the gene itself.",
+      "question": "Colistin is an important treatment option for some difficult Gram-negative infections. New Zealand is an unusual setting for studying mobile colistin resistance because colistin has never been licensed for food-producing animals and systemic human use is low. Yet mcr genes have still been detected here. We wanted to know which bacteria carried them, where those genes sat within their genomes, and whether the plasmids carrying them belonged to the same lineages circulating internationally.",
+      "findings": [
+        "We identified 71 New Zealand clinical isolates carrying five mcr gene types: mcr-1, mcr-3, mcr-8, mcr-9 and mcr-10. They occurred across Escherichia coli, Enterobacter, Klebsiella and Citrobacter. Long-read sequencing of 42 representative isolates produced 42 complete chromosomes and circularised 112 of 119 plasmids.",
+        "The global comparison contained 1,543 mcr-carrying plasmids from 60 countries and regions, spanning 1984–2024. These resolved into 14 major plasmid-backbone lineages. A relatively small set of backbones, particularly IncI2, IncX4 and IncHI2A, accounted for much of the global movement of mcr.",
+        "The genes occurred in 56 different mobile-element configurations, and about 40% of the plasmids no longer had identifiable insertion sequences immediately flanking the mcr gene. Other antimicrobial-resistance genes were frequently carried on the same plasmids."
+      ],
+      "meaning": [
+        "The New Zealand results complicate a simple explanation in which mobile colistin resistance appears only because colistin is being used locally. The study cannot identify the route by which every mcr plasmid entered New Zealand, but the New Zealand plasmids largely fall within the same successful backbone lineages seen internationally. Repeated introductions, persistence of successful plasmids and selection for other resistance genes could therefore maintain mcr even when direct colistin pressure is limited.",
+        "For genomic surveillance, that changes the question. Detecting the resistance gene tells us what resistance is present. Resolving the plasmid tells us what is carrying it, what else travels with it, and how that mobile element relates to resistance circulating elsewhere. Sometimes the epidemiologically informative unit is not the bacterial strain alone."
+      ],
+      "limitations": [
+        "These data should not be interpreted as a population prevalence estimate for mobile colistin resistance in New Zealand. The New Zealand collection comprised mcr-positive clinical isolates identified through national AMR surveillance and reference activities, rather than a dedicated prevalence survey. The 42 isolates selected for long-read sequencing were chosen using a targeted, non-random strategy to represent all detected mcr gene types and host species. The global plasmid collection is also a convenience dataset shaped by differences in sequencing, surveillance and public data availability between countries.",
+        "The study does not prove the route or timing of individual introductions into New Zealand. Some mcr-9 and mcr-10 isolates showed patterns suggestive of heteroresistance, but population analysis profiling was not performed, so those observations remain suggestive rather than definitive."
+      ],
+      "credit": "Jenny Szeto and I contributed equally as joint first authors on this study. The work brought together researchers and clinical scientists from PHF Science, Awanui Labs Dunedin, the University of Waikato, the New Zealand Institute for Bioeconomy Science/AgResearch, Massey University and the Gillies McIndoe Research Institute. Full author contributions, affiliations and funding information are provided in the published paper.",
+      "paper_authors": [
+        "Szeto J",
+        "White RT",
+        "Perez H",
+        "Hardaker A",
+        "Dyet K",
+        "Elvy J",
+        "Jackson S",
+        "Collis RM",
+        "Cookson AL",
+        "Gray C",
+        "Skelton I",
+        "Taylor W",
+        "Pattis I",
+        "Yang Z"
+      ],
+      "italics": [
+        "Escherichia coli",
+        "Enterobacter",
+        "Klebsiella",
+        "Citrobacter",
+        "mcr-10",
+        "mcr-9",
+        "mcr-8",
+        "mcr-3",
+        "mcr-1",
+        "mcr"
+      ]
     }
   ]
 }
