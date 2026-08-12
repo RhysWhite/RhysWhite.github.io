@@ -14,6 +14,7 @@ ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data" / "publications.json"
 OVERRIDES = ROOT / "data" / "publication-overrides.json"
 METRICS = ROOT / "data" / "publication-metrics.json"
+BLOG_DATA = ROOT / "data" / "blog-posts.json"
 PUBLICATIONS_OUT = ROOT / "publications" / "index.html"
 CV_OUT = ROOT / "cv" / "index.html"
 
@@ -60,6 +61,7 @@ def header(active: str) -> str:
         ("Research", "/research/", "research"),
         ("Publications", "/publications/", "publications"),
         ("Software", "/software/", "software"),
+        ("Blog", "/blog/", "blog"),
         ("CV", "/cv/", "cv"),
         ("About", "/about/", "about"),
     ]
@@ -72,7 +74,7 @@ def header(active: str) -> str:
 
 
 def footer() -> str:
-    return '''<footer class="site-footer"><div class="container"><div class="footer-grid"><div><h2>Rhys White</h2><p>Microbial genomics · genomic epidemiology · antimicrobial resistance · research software.</p></div><div><h3>Navigate</h3><div class="footer-links"><a href="/research/">Research</a><a href="/publications/">Publications</a><a href="/software/">Software</a><a href="/cv/">CV</a><a href="/about/">About</a></div></div><div><h3>Connect</h3><div class="footer-links"><a href="mailto:rhys.white@phfscience.nz">Email</a><a href="https://github.com/RhysWhite">GitHub</a><a href="https://orcid.org/0000-0001-6620-758X">ORCID</a><a href="https://scholar.google.com/citations?user=NwdWAb4AAAAJ&amp;hl=en">Google Scholar</a><a href="https://www.researchgate.net/profile/Rhys-White-2">ResearchGate</a><a href="https://bsky.app/profile/rhystwhite.bsky.social">Bluesky</a><a href="https://x.com/RhysTWhite">X</a></div></div></div><div class="footer-bottom"><span>© <span data-year-now>2026</span> Rhys White</span><span>Personal website. Views are my own.</span></div></div></footer>'''
+    return '''<footer class="site-footer"><div class="container"><div class="footer-grid"><div><h2>Rhys White</h2><p>Microbial genomics · genomic epidemiology · antimicrobial resistance · research software.</p></div><div><h3>Navigate</h3><div class="footer-links"><a href="/research/">Research</a><a href="/publications/">Publications</a><a href="/software/">Software</a><a href="/blog/">Blog</a><a href="/cv/">CV</a><a href="/about/">About</a></div></div><div><h3>Connect</h3><div class="footer-links"><a href="mailto:rhys.white@phfscience.nz">Email</a><a href="https://github.com/RhysWhite">GitHub</a><a href="https://orcid.org/0000-0001-6620-758X">ORCID</a><a href="https://scholar.google.com/citations?user=NwdWAb4AAAAJ&amp;hl=en">Google Scholar</a><a href="https://www.researchgate.net/profile/Rhys-White-2">ResearchGate</a><a href="https://bsky.app/profile/rhystwhite.bsky.social">Bluesky</a><a href="https://x.com/RhysTWhite">X</a></div></div></div><div class="footer-bottom"><span>© <span data-year-now>2026</span> Rhys White</span><span>Personal website. Views are my own.</span></div></div></footer>'''
 
 
 def pub_target(pub: dict) -> str:
@@ -91,6 +93,14 @@ def pub_article(pub: dict) -> str:
     doi = str(pub.get("doi") or "").strip()
     target = pub_target(pub)
     label_html = "".join(f'<span class="pub-tag">{esc(label)}</span>' for label in labels)
+
+    blog_html = ""
+    blog_slug = str(pub.get("blog_slug") or "").strip()
+    if blog_slug:
+        blog_html = (
+            f'<a class="pub-note-link" href="/blog/posts/{esc(blog_slug)}/">'
+            'Plain-English summary →</a>'
+        )
 
     citation_html = ""
     citation_count = pub.get("openalex_citations")
@@ -133,7 +143,7 @@ def pub_article(pub: dict) -> str:
     tag_block = f'<div class="pub-tags">{label_html}</div>' if label_html else ""
     return f'''<article class="pub-item" data-year="{year}" data-tags="{tag_text}">
 <div class="pub-year">{year}</div>
-<div class="pub-body"><h2>{title_tag}</h2><p class="pub-meta">{meta}</p>{tag_block}</div>
+<div class="pub-body"><h2>{title_tag}</h2><p class="pub-meta">{meta}</p>{tag_block}{blog_html}</div>
 {impact}</article>'''
 
 
@@ -209,6 +219,18 @@ def main() -> None:
     overrides = json.loads(OVERRIDES.read_text(encoding="utf-8")) if OVERRIDES.exists() else {}
     metrics_data = json.loads(METRICS.read_text(encoding="utf-8")) if METRICS.exists() else {}
     metrics = metrics_data.get("metrics", {})
+
+    blog_lookup = {}
+    if BLOG_DATA.exists():
+        blog_data = json.loads(BLOG_DATA.read_text(encoding="utf-8"))
+        for post in blog_data.get("posts", []):
+            if str(post.get("status") or "").strip().lower() != "published":
+                continue
+            blog_doi = str(post.get("doi") or "").strip().lower()
+            blog_slug = str(post.get("slug") or "").strip()
+            if blog_doi and blog_slug:
+                blog_lookup[blog_doi] = blog_slug
+
     publications = []
     for original in data.get("publications", []):
         pub = dict(original)
@@ -224,6 +246,9 @@ def main() -> None:
         if isinstance(citations, int) and citations > 0:
             pub["openalex_citations"] = citations
             pub["openalex_url"] = metric.get("openalex_id", "")
+
+        if doi in blog_lookup:
+            pub["blog_slug"] = blog_lookup[doi]
 
         publications.append(pub)
     data["publications"] = publications

@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "posts": [
+    {
+      "status": "published",
+      "slug": "tracking-mobile-dna-bacterial-surveillance",
+      "doi": "10.1071/MA26020",
+      "paper_date": "2026-07-10",
+      "note_date": "2026-08-12",
+      "headline": "Mobile DNA can reveal clues that bacterial family trees miss",
+      "standfirst": "Three New Zealand case studies show that pieces of DNA that can move within and between bacteria can reveal how resistance emerges, how outbreaks are linked, and how successful strains change over time.",
+      "short_version": "Public-health genomics often compares bacterial chromosomes to work out whether cases are linked. But some important changes sit on mobile DNA: pieces of genetic material that can carry resistance genes and other traits. In these three examples, tracking that DNA added useful information at the scale of one patient, one hospital ward and one long-standing national strain.",
+      "question": "What can we miss if we focus mainly on the bacterial chromosome? I brought together three New Zealand examples spanning change within one patient, transmission in a neonatal intensive care unit, and the long-term history of New Zealand's endemic AK3 MRSA strain.",
+      "findings": [
+        "In one patient, two Enterococcus faecium samples collected 54 days apart had almost identical chromosomes. The later sample contained a vanB-carrying mobile DNA element inserted into its chromosome and was less susceptible to the antibiotic vancomycin.",
+        "During a Klebsiella variicola outbreak in a neonatal intensive care unit, all outbreak isolates carried the same large plasmid: a separate piece of bacterial DNA. Closely timed but unrelated Klebsiella from the unit did not carry it. The outbreak strain was not multidrug-resistant, so resistance-focused surveillance alone would not have highlighted this signal.",
+        "New Zealand's long-established AK3 MRSA strain showed a stepwise history of acquiring different pieces of mobile DNA over decades as the lineage emerged and became established in the community."
+      ],
+      "meaning": "Chromosome-based analysis remains the backbone of bacterial genomic surveillance. It is extremely useful for working out which strains are related and identifying outbreaks. But when the question is how resistance genes or other mobile traits are moving, complete-genome nanopore sequencing can reveal the physical pieces of DNA carrying them. The two approaches answer different, complementary questions.",
+      "limitations": "These are three descriptive case studies, not experiments proving cause and effect. In the patient example, we cannot tell whether the vanB-carrying element was newly acquired during the hospital stay or was already present in a small bacterial population that later became more common. In the neonatal-unit outbreak, the plasmid was a useful marker of the outbreak strain, but there is no evidence that it caused transmission. In AK3, the timing of mobile-DNA acquisition does not prove that those elements made the lineage successful; other factors could also have contributed.",
+      "credit": "This Lab Report is a single-author synthesis of previously published collaborative studies. The original investigations, their full author lists and the supporting papers are cited in the article.",
+      "media": []
+    }
+  ]
+}

@@ -22,13 +22,15 @@ jobs:
           ORCID_ACCESS_TOKEN: ${{ secrets.ORCID_ACCESS_TOKEN }}
           ORCID_CLIENT_ID: ${{ secrets.ORCID_CLIENT_ID }}
           ORCID_CLIENT_SECRET: ${{ secrets.ORCID_CLIENT_SECRET }}
-        run: python scripts/sync_publications.py
+        run: |
+          python scripts/sync_publications.py
+          python scripts/render_blog.py
       - name: Commit updated publication data
         run: |
           set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/publications.json publications/index.html cv/index.html
+          git add data/publications.json publications/index.html cv/index.html blog
           git diff --cached --quiet && exit 0
           git commit -m "chore: refresh publications from ORCID"
           git push
