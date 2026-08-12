@@ -249,12 +249,40 @@ def retrospective_label(post: dict, pub: dict) -> str:
     return f"Research note · {human_date(str(post['note_date']))}"
 
 
+def note_text(value: object, post: dict) -> str:
+    """Escape note prose, then safely italicise declared scientific terms."""
+    rendered = esc(str(value))
+
+    raw_terms = post.get("italics", [])
+    if not isinstance(raw_terms, list):
+        raise ValueError("Blog post 'italics' must be a list.")
+
+    terms = sorted(
+        {str(term).strip() for term in raw_terms if str(term).strip()},
+        key=len,
+        reverse=True,
+    )
+
+    replacements = {}
+
+    for index, term in enumerate(terms):
+        safe_term = esc(term)
+        token = f"@@BLOGITALIC{index}@@"
+        rendered = rendered.replace(safe_term, token)
+        replacements[token] = f"<i>{safe_term}</i>"
+
+    for token, replacement in replacements.items():
+        rendered = rendered.replace(token, replacement)
+
+    return rendered
+
+
 def render_post(post: dict, pub: dict) -> str:
     slug = str(post["slug"])
     canonical = f"https://rhyswhite.github.io/blog/posts/{slug}/"
 
     findings = "".join(
-        f"<li>{esc(item)}</li>"
+        f"<li>{note_text(item, post)}</li>"
         for item in post["findings"]
     )
 
@@ -279,8 +307,8 @@ def render_post(post: dict, pub: dict) -> str:
 <div class="narrow">
 <p class="eyebrow">Research note</p>
 <p class="note-status">{esc(retrospective_label(post, pub))}</p>
-<h1>{esc(post["headline"])}</h1>
-<p class="lede">{esc(post["standfirst"])}</p>
+<h1>{note_text(post["headline"], post)}</h1>
+<p class="lede">{note_text(post["standfirst"], post)}</p>
 </div>
 </header>
 
@@ -288,12 +316,12 @@ def render_post(post: dict, pub: dict) -> str:
 
 <section class="note-section note-short">
 <h2>The short version</h2>
-<p>{esc(post["short_version"])}</p>
+<p>{note_text(post["short_version"], post)}</p>
 </section>
 
 <section class="note-section">
 <h2>What were we trying to find out?</h2>
-<p>{esc(post["question"])}</p>
+<p>{note_text(post["question"], post)}</p>
 </section>
 
 <section class="note-section">
@@ -303,19 +331,19 @@ def render_post(post: dict, pub: dict) -> str:
 
 <section class="note-section">
 <h2>What does it mean?</h2>
-<p>{esc(post["meaning"])}</p>
+<p>{note_text(post["meaning"], post)}</p>
 </section>
 
 <section class="note-section">
 <h2>What does it not show?</h2>
-<p>{esc(post["limitations"])}</p>
+<p>{note_text(post["limitations"], post)}</p>
 </section>
 
 {render_paper(pub)}
 
 <section class="note-section">
 <h2>Credit</h2>
-<p>{esc(post["credit"])}</p>
+<p>{note_text(post["credit"], post)}</p>
 </section>
 
 {media}
@@ -343,8 +371,8 @@ def render_index(entries: list[tuple[dict, dict]]) -> str:
                 '<article class="note-card">'
                 f'<p class="note-card-meta">{esc(label)}</p>'
                 f'<h2><a href="/blog/posts/{slug}/">'
-                f'{esc(post["headline"])}</a></h2>'
-                f'<p>{esc(post["standfirst"])}</p>'
+                f'{note_text(post["headline"], post)}</a></h2>'
+                f'<p>{note_text(post["standfirst"], post)}</p>'
                 f'<a class="note-read" href="/blog/posts/{slug}/">'
                 'Read the plain-English summary →</a>'
                 '</article>'

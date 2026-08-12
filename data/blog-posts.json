@@ -19,7 +19,12 @@
       "meaning": "Chromosome-based analysis remains the backbone of bacterial genomic surveillance. It is extremely useful for working out which strains are related and identifying outbreaks. But when the question is how resistance genes or other mobile traits are moving, complete-genome nanopore sequencing can reveal the physical pieces of DNA carrying them. The two approaches answer different, complementary questions.",
       "limitations": "These are three descriptive case studies, not experiments proving cause and effect. In the patient example, we cannot tell whether the vanB-carrying element was newly acquired during the hospital stay or was already present in a small bacterial population that later became more common. In the neonatal-unit outbreak, the plasmid was a useful marker of the outbreak strain, but there is no evidence that it caused transmission. In AK3, the timing of mobile-DNA acquisition does not prove that those elements made the lineage successful; other factors could also have contributed.",
       "credit": "This Lab Report is a single-author synthesis of previously published collaborative studies. The original investigations, their full author lists and the supporting papers are cited in the article.",
-      "media": []
+      "media": [],
+      "italics": [
+        "Enterococcus faecium",
+        "Klebsiella variicola",
+        "vanB"
+      ]
     }
   ]
 }
