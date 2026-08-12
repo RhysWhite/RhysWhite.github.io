@@ -55,6 +55,34 @@ def human_date(value: str) -> str:
     return f"{d.day} {d.strftime('%B %Y')}"
 
 
+def parse_paper_date(value: str) -> date:
+    """Parse YYYY-MM-DD or month-level YYYY-MM publication dates."""
+    if re.fullmatch(r"\d{4}-\d{2}", value):
+        try:
+            return date.fromisoformat(value + "-01")
+        except ValueError as exc:
+            raise ValueError(
+                f"paper_date must use YYYY-MM or YYYY-MM-DD format: {value!r}"
+            ) from exc
+
+    try:
+        return date.fromisoformat(value)
+    except ValueError as exc:
+        raise ValueError(
+            f"paper_date must use YYYY-MM or YYYY-MM-DD format: {value!r}"
+        ) from exc
+
+
+def human_paper_date(value: str) -> str:
+    """Format a paper date without inventing unavailable day precision."""
+    d = parse_paper_date(value)
+
+    if re.fullmatch(r"\d{4}-\d{2}", value):
+        return d.strftime("%B %Y")
+
+    return f"{d.day} {d.strftime('%B %Y')}"
+
+
 def publication_lookup() -> dict[str, dict]:
     payload = json.loads(PUBLICATION_DATA.read_text(encoding="utf-8"))
     lookup = {}
@@ -123,7 +151,7 @@ def validate_posts(posts: list[dict], publications: dict[str, dict]) -> None:
 
         paper_date = str(post.get("paper_date") or "").strip()
         if paper_date:
-            parse_iso_date(paper_date, "paper_date")
+            parse_paper_date(paper_date)
 
         findings = post.get("findings")
         if not isinstance(findings, list) or not all(
@@ -169,7 +197,7 @@ def validate_posts(posts: list[dict], publications: dict[str, dict]) -> None:
 def paper_date_for_sort(post: dict, pub: dict) -> date:
     paper_date = str(post.get("paper_date") or "").strip()
     if paper_date:
-        return parse_iso_date(paper_date, "paper_date")
+        return parse_paper_date(paper_date)
 
     year = int(pub.get("year") or 0)
     return date(year, 1, 1)
@@ -256,7 +284,7 @@ def render_paper(post: dict, pub: dict) -> str:
 
 def retrospective_label(post: dict, pub: dict) -> str:
     if post.get("paper_date"):
-        published = human_date(str(post["paper_date"]))
+        published = human_paper_date(str(post["paper_date"]))
         return f"Paper published {published} · Research note"
 
     pub_year = int(pub.get("year") or 0)

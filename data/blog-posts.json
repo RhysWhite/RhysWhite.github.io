@@ -162,6 +162,49 @@
         "mcr-1",
         "mcr"
       ]
+    },
+    {
+      "slug": "oxa48-outbreak-community-food-premises",
+      "doi": "10.3201/eid3107.250289",
+      "status": "published",
+      "note_date": "2026-08-13",
+      "paper_date": "2025-07",
+      "headline": "A drug-resistant outbreak that looked hospital-linked pointed back into the community",
+      "standfirst": "When a cluster of OXA-48-producing Escherichia coli appeared in Hutt Valley, hospital transmission was an obvious possibility. But the patients did not share a common ward or service. Interviews, food-handler screening and whole-genome sequencing instead pointed to a community food premises as an important setting in the outbreak.",
+      "short_version": "Genomic outbreaks can be misleading if we start with the assumption that transmission happened where cases were detected. Most patients in this outbreak had hospital contact, but that did not explain the pattern. A shared community exposure, colonized food handlers and closely related bacterial genomes together pointed beyond the hospital.",
+      "question": "OXA-48-producing Escherichia coli was uncommon in New Zealand and was usually associated with international travel. In 2018, several people in Hutt Valley with no recent international travel were found to carry or be infected with OXA-48-producing Escherichia coli ST131. Some had not recently been hospitalized. We wanted to determine whether the cases were connected and, if so, where transmission might have been occurring.",
+      "findings": [
+        "We identified 25 cases between August 2018 and December 2022. Eighteen patients had been admitted to Hutt Valley Hospital, but no single ward or hospital location connected them. Of the 24 patients who could be interviewed, 18 had visited the same community food premises. Seven of those 18 had not been admitted to Hutt Valley Hospital, and four had received no hospital-level healthcare since 2015.",
+        "The premises investigation identified several food-safety concerns, particularly around hand hygiene and glove use. Four of 16 food handlers tested in 2019 carried OXA-48-producing Escherichia coli, and one remained positive when tested again 18 months later. CPE was not recovered from food, water or environmental samples, although non-OXA-48-producing Escherichia coli was detected on several kitchen surfaces. Enhanced community surveillance of 217 stool and 2,050 urine samples detected no additional OXA-48-producing organisms.",
+        "Whole-genome sequencing was performed on 33 isolates from patients and food handlers. All belonged to ST131 clade C, and the outbreak genomes formed a closely related cluster with a median pairwise distance of seven SNVs. Food-handler genomes clustered with the patient isolates, providing genomic support for the epidemiological connection."
+      ],
+      "meaning": [
+        "Hospital exposure was common among the cases, but hospital exposure alone did not explain the outbreak. The combination of patient interviews, food-handler screening and genomics pointed to a community food premises as an important setting in its propagation. The study therefore shows why source attribution should not stop at the most obvious shared setting.",
+        "It also broadens how we think about carbapenemase-producing Enterobacterales. Infection-control strategies have traditionally concentrated on healthcare environments, but resistant bacteria can move through community settings as well. Genomics becomes much more informative when it is interpreted alongside epidemiological and environmental investigation rather than used in isolation."
+      ],
+      "limitations": [
+        "The study does not prove that contaminated food was the transmission vehicle. OXA-48-producing Escherichia coli was not recovered from food, water or environmental samples, and no analytical epidemiological study with community controls was performed. The proposed foodborne pathway therefore rests on the combined epidemiological, microbiological and genomic evidence rather than direct recovery of the outbreak organism from food.",
+        "The timing and direction of individual transmission events also remain uncertain. Colonization could have preceded detection by months or years, exposure histories were necessarily retrospective, and food handlers were first sampled nine months after the outbreak was recognized. The investigation also could not establish who introduced the lineage into New Zealand."
+      ],
+      "credit": "This public-health investigation brought together Health New Zealand Te Whatu Ora, Awanui Labs Wellington and Dunedin, and the Institute of Environmental Science and Research (ESR), now PHF Science. My contribution centred on the genomic analysis and interpretation, including the phylogenomic work used to connect patient and food-handler isolates and place the outbreak lineage in its wider evolutionary context. Affiliations and funding information are provided in the published paper.",
+      "paper_authors": [
+        "Thornley CN",
+        "Kelly M",
+        "Bloomfield M",
+        "Mangalasseril L",
+        "Nesdale A",
+        "Underwood C",
+        "Dyet K",
+        "Elvy J",
+        "Szeto J",
+        "Perez H",
+        "Ren X",
+        "Woodhouse R",
+        "White RT"
+      ],
+      "italics": [
+        "Escherichia coli"
+      ]
     }
   ]
 }
