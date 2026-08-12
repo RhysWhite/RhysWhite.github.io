@@ -123,8 +123,13 @@
         "implementation"
       ],
       "labels": [
-        "nanopore"
-      ]
+        "AMR",
+        "nanopore",
+        "metagenomics"
+      ],
+      "journal": "bioRxiv",
+      "citation": "2026.02.16.706128",
+      "type": "preprint"
     },
     {
       "year": 2025,
@@ -254,45 +259,6 @@
     },
     {
       "year": 2025,
-      "title": "Resolving plasmid-encoded carbapenem resistance dynamics and reservoirs in a hospital setting through nanopore sequencing",
-      "doi": "10.1101/2025.08.20.671332",
-      "source": "orcid",
-      "tags": [
-        "mobile",
-        "implementation"
-      ],
-      "labels": [
-        "nanopore",
-        "plasmids"
-      ]
-    },
-    {
-      "year": 2025,
-      "title": "The need for speed: ultra-rapid high-resolution outbreak analysis in a front-line hospital microbiology laboratory",
-      "doi": "10.1101/2025.02.04.25321496",
-      "source": "orcid",
-      "authors": "Bloomfield M, Bakker S, Burton M et al.",
-      "tags": [
-        "outbreak",
-        "implementation"
-      ],
-      "labels": [
-        "outbreak"
-      ]
-    },
-    {
-      "year": 2025,
-      "title": "Convergent evolution of distinct D-ribulose utilisation pathways in attaching and effacing pathogens",
-      "doi": "10.1101/2025.02.06.636802",
-      "source": "orcid",
-      "authors": "Cottam C, Bowran K, White RT et al.",
-      "tags": [
-        "population"
-      ],
-      "labels": []
-    },
-    {
-      "year": 2025,
       "title": "Implementing nanopore sequencing in a clinical laboratory: a social systems case study",
       "authors": "Manning S et al., White RT",
       "journal": "New Zealand Journal of Medical Laboratory Science",
@@ -397,56 +363,6 @@
       "source": "orcid"
     },
     {
-      "year": 2024,
-      "title": "The rapid detection of a neonatal unit outbreak of a wild-type Klebsiella variicola using decentralized Oxford Nanopore sequencing",
-      "doi": "10.21203/rs.3.rs-5147341/v1",
-      "source": "orcid",
-      "authors": "White RT, Balm M, Burton M et al.",
-      "tags": [
-        "outbreak",
-        "implementation"
-      ],
-      "labels": [
-        "nanopore",
-        "outbreak",
-        "Klebsiella"
-      ]
-    },
-    {
-      "year": 2024,
-      "title": "<xhtml:span xmlns:xhtml=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\">The complete genome sequence of five pre-2013&#160;Escherichia coli sequence type (ST)1193 strains reveals insights into an emerging pathogen </xhtml:span>",
-      "doi": "10.1099/acmi.0.000894.v2",
-      "source": "orcid",
-      "authors": "White RT, Ashcroft MA, Bauer MJ et al.",
-      "tags": [],
-      "labels": []
-    },
-    {
-      "year": 2024,
-      "title": "The complete genome sequence of five historical Escherichia coli sequence type (ST)1193 strains reveals insights into an emerging pathogen",
-      "doi": "10.1099/acmi.0.000894.v1",
-      "source": "orcid",
-      "tags": [],
-      "labels": []
-    },
-    {
-      "year": 2024,
-      "title": "Resolving a neonatal intensive care unit outbreak of methicillin-resistantStaphylococcus aureusto the SNV level using Oxford Nanopore simplex reads and HERRO error correction",
-      "doi": "10.1101/2024.07.11.603154",
-      "source": "orcid",
-      "authors": "Bloomfield M, Bakker S, Burton M et al.",
-      "tags": [
-        "outbreak",
-        "mobile",
-        "implementation",
-        "methods"
-      ],
-      "labels": [
-        "nanopore",
-        "outbreak"
-      ]
-    },
-    {
       "year": 2023,
       "title": "A discovery down under: decoding the draft genome sequence of Pantoea stewartii from Australia’s Critically Endangered western ground parrot/kyloring (Pezoporus flaviventris)",
       "authors": "White RT et al.",
@@ -530,17 +446,6 @@
       "source": "orcid"
     },
     {
-      "year": 2023,
-      "title": "Metabolism of ʟ -arabinose converges with virulence regulation to promote enteric pathogen fitness",
-      "journal": "BioRxiv",
-      "doi": "10.1101/2023.12.21.572775",
-      "source": "orcid",
-      "tags": [
-        "population"
-      ],
-      "labels": []
-    },
-    {
       "year": 2022,
       "title": "One clone to rule them all: culture-independent genomics of Chlamydia psittaci from equine and avian hosts in Australia",
       "authors": "White RT et al.",
@@ -571,29 +476,6 @@
         "phase variation"
       ],
       "source": "orcid"
-    },
-    {
-      "year": 2022,
-      "title": "Comparative Genomics of Extraintestinal Pathogenic Escherichia coli",
-      "doi": "10.14264/ba1cc53",
-      "source": "orcid",
-      "authors": "White R",
-      "tags": [
-        "population"
-      ],
-      "labels": []
-    },
-    {
-      "year": 2022,
-      "title": "Whole-genome sequencing of Australian equine and avian Chlamydia psittaci strains: One clone to rule them all?",
-      "doi": "10.25907/00155",
-      "source": "orcid",
-      "tags": [
-        "comparative"
-      ],
-      "labels": [
-        "Chlamydia"
-      ]
     },
     {
       "year": 2021,
@@ -629,16 +511,6 @@
       "source": "orcid"
     },
     {
-      "year": 2021,
-      "title": "Genomic epidemiology reveals geographical clustering of multidrug-resistant Escherichia coli sequence type (ST)131 associated with bacteraemia in Wales, United Kingdom",
-      "doi": "10.1101/2021.05.21.21257487",
-      "source": "orcid",
-      "tags": [
-        "mobile"
-      ],
-      "labels": []
-    },
-    {
       "year": 2020,
       "title": "Companion animals are spillover hosts of the multidrug-resistant human extraintestinal Escherichia coli pandemic clones ST131 and ST1193",
       "authors": "Kidsley AK, White RT et al.",
@@ -656,17 +528,6 @@
         "ST1193"
       ],
       "source": "orcid"
-    },
-    {
-      "year": 2019,
-      "title": "Genomic characterisation and context of the blaNDM-1 carbapenemase in Escherichia coli ST101.",
-      "doi": "10.1101/860726",
-      "source": "orcid",
-      "authors": "Ashcroft MM, Forde BM, Phan MD et al.",
-      "tags": [
-        "mobile"
-      ],
-      "labels": []
     }
   ]
 }
