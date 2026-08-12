@@ -65,6 +65,8 @@
           const item = metrics[el.dataset.metric];
           const value = item && typeof item === 'object' ? item.value : item;
           if (value === undefined || value === null || value === '') return;
+          const numericValue = Number(value);
+          if (Number.isFinite(numericValue) && numericValue <= 0) return;
           el.textContent = formatMetric(value);
           el.closest('div')?.removeAttribute('hidden');
           populated += 1;
