@@ -25,6 +25,30 @@
         "Klebsiella variicola",
         "vanB"
       ]
+    },
+    {
+      "status": "published",
+      "slug": "hospital-klebsiella-no-sustained-transmission",
+      "doi": "10.1099/mgen.0.001700",
+      "paper_date": "2026-04-30",
+      "note_date": "2026-08-13",
+      "headline": "Sequencing found no evidence of sustained Klebsiella spread between hospital patients",
+      "standfirst": "A 15-month research pilot at Wellington Regional Hospital found a highly diverse Klebsiella pneumoniae population rather than evidence of one strain spreading between patients. The work combined onsite sequencing at Awanui Labs Wellington with sequencing oversight, bioinformatics and genomic analysis from PHF Science.",
+      "short_version": "When the same bacterial species appears repeatedly in a hospital, an important question is whether patients are part of the same transmission chain or whether the cases are unrelated. In this collaborative research study, we sequenced Klebsiella pneumoniae collected over 15 months. The genomes were remarkably diverse. Among 121 high-quality genomes, we found 75 different sequence types, and most appeared only once. We found no genomic evidence of sustained patient-to-patient transmission during the study period.",
+      "question": "Could prospective sequencing help distinguish possible hospital transmission from unrelated Klebsiella pneumoniae cases, while also showing what resistance genes and mobile DNA those bacteria carried? The pilot was based at Wellington Regional Hospital. Awanui Labs Wellington performed the onsite laboratory sequencing, while PHF Science provided sequencing oversight, bioinformatics and genomic analyses.",
+      "findings": [
+        "The bacteria were highly diverse. After quality control, 121 genomes were suitable for detailed analysis. They represented 75 sequence types, with 68% of those types found only once. This did not look like a hospital population dominated by one expanding strain.",
+        "We found no evidence of sustained spread between patients. The closest genomic pair differed by only three filtered single-nucleotide changes, but both samples came from the same patient five months apart. That was consistent with the bacteria persisting and changing within one person, rather than transmission to another patient.",
+        "The complete genomes revealed more than relatedness alone. The study produced 118 complete genomes, allowing us to examine plasmids, resistance genes and virulence-associated DNA. Acquired antimicrobial-resistance genes were carried on plasmids in 35 of those 118 genomes, but we found no convergence of acquired resistance and the major virulence features examined in the study."
+      ],
+      "meaning": "A repeated bacterial species does not automatically mean a hospital outbreak. Genome sequencing can help test whether apparently similar cases are actually closely related. This pilot also showed the value of combining capabilities across organisations. Sequencing could be performed within the diagnostic laboratory, while PHF Science contributed specialist genomic and bioinformatics analysis needed to examine relatedness, resistance and mobile DNA in detail. That model was being evaluated here as a research activity, not as a routine nationwide Klebsiella sequencing programme. The negative result was useful in its own right. Within the samples available, there was no genomic cluster supporting sustained patient-to-patient spread.",
+      "limitations": "This was one hospital over 15 months, so it does not describe Klebsiella pneumoniae across New Zealand. Screening was targeted rather than universal, and environmental sampling and systematic carriage surveys were not part of the study. Thirty-six additional isolates did not meet the coverage requirements for the highest-resolution genomic analysis, which could affect estimates of diversity and transmission. The study also used nanopore sequencing alone. The data were well suited to lineage assignment, plasmid reconstruction and transmission analysis, but the paper cautions that residual sequencing errors can make some fine-scale gene-disruption calls less reliable. So the conclusion is deliberately specific: we found no evidence of sustained patient-to-patient transmission among the sampled bacteria during the study period. It is not proof that transmission could never have occurred.",
+      "credit": "This was a collaborative study led across PHF Science and Awanui Labs Wellington, with contributions from researchers and clinicians at the University of Pittsburgh, Monash University, the London School of Hygiene & Tropical Medicine, and Health New Zealand. Awanui Labs Wellington undertook the onsite laboratory work, while PHF Science provided sequencing oversight, bioinformatics and genomic analyses. The wider author team contributed to study design, analysis and interpretation.",
+      "italics": [
+        "Klebsiella pneumoniae",
+        "Klebsiella"
+      ],
+      "media": []
     }
   ]
 }
