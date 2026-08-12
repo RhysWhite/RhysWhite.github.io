@@ -269,6 +269,52 @@
           "text": "The companion public-health investigation describes how epidemiology, food-handler screening and genomics pointed to a community food premises."
         }
       ]
+    },
+    {
+      "slug": "mrsa-nicu-outbreak-prospective-sequencing",
+      "doi": "10.1099/mgen.0.001273",
+      "status": "published",
+      "note_date": "2026-08-13",
+      "paper_date": "2024-07-05",
+      "headline": "Sequencing detected an MRSA outbreak when only two cases were known",
+      "standfirst": "A prospective nanopore sequencing system detected an MRSA outbreak in a neonatal intensive care unit just 13 days after the first positive culture, when only two cases were known. Ward screening then found six additional colonized infants, and infection-control measures were instituted while the outbreak was still developing.",
+      "short_version": "Genomic sequencing is often used after an outbreak has already become obvious. We wanted to know whether it could instead help identify an outbreak early enough to influence the response. In this neonatal unit, prospective sequencing showed that two MRSA cases were genomically linked. Wider screening then rapidly revealed the extent of the cluster.",
+      "question": "In 2022, Awanui Labs Wellington established prospective nanopore sequencing for rapid genomic surveillance. Rather than waiting for enough cases to accumulate before investigating them retrospectively, the aim was to analyse potentially important isolates as they appeared. When two infants in the neonatal intensive care unit were found to carry sequence type 97 MRSA, we wanted to determine quickly whether they represented unrelated cases or the beginning of an outbreak, and then place any outbreak strain into a wider New Zealand and international genomic context.",
+      "findings": [
+        "The genomic cluster was identified 13 days after the first MRSA-positive culture, when only two cases were known. Ward screening subsequently identified six additional colonized infants. Once the outbreak had been detected and infection-control measures were instituted, transmission was limited: only two further ST97 cases were detected, along with three unrelated non-ST97 MRSA cases.",
+        "The wider genomic analysis compared the outbreak with 35 New Zealand surveillance genomes and 45 global ST97 genomes. Nine of the ten NICU ST97-IVa genomes formed a distinct outbreak cluster. Importantly, one isolate that had initially been presumed to belong to the outbreak sat outside that cluster and was retrospectively excluded. Genomics therefore helped both include genuine outbreak cases and exclude a plausible-looking non-outbreak case.",
+        "We reconstructed the phylogeny independently using Illumina sequencing. The Illumina analysis considerably reduced the branch lengths among the NICU isolates compared with the nanopore analysis, but the overall tree topology and epidemiological conclusions were unchanged."
+      ],
+      "meaning": [
+        "The important result is not simply that nanopore sequencing was fast. Genomic information became available while there was still an opportunity to act on it. With only two known MRSA cases, sequencing provided evidence that the two cases belonged to the same outbreak cluster and helped define the outbreak as additional cases were identified.",
+        "The study shows how genomic epidemiology can move from retrospective explanation towards prospective surveillance. Sequencing close to the hospital provided rapid outbreak detection, while comparison with national and international genomes supplied the wider evolutionary context needed to interpret the cluster.",
+        "It also shows the value of genomics for exclusion as well as inclusion. One ST97 isolate looked epidemiologically plausible as an outbreak case but was genomically distinct. Correctly excluding such cases is part of defining an outbreak accurately."
+      ],
+      "limitations": [
+        "The nanopore and Illumina analyses were not identical at single-nucleotide resolution. The Illumina phylogeny considerably reduced the branch lengths within the NICU cluster, consistent with residual sequencing error in the nanopore data available at the time. The overall topology and outbreak conclusions were nevertheless unchanged.",
+        "Genomic relatedness also does not by itself reconstruct every individual transmission event. The sequencing results were interpreted alongside ward screening, case information and infection-control investigation."
+      ],
+      "credit": "This collaborative study brought together the Institute of Environmental Science and Research (ESR), now PHF Science, Awanui Labs Wellington, Livestock Improvement Corporation, the University of Otago and Health New Zealand Te Whatu Ora. Max Bloomfield and I co-conceptualized and investigated the study, and my contribution centred on the genomic and data analysis used to detect and contextualize the outbreak. Full author contributions and affiliations are provided in the published paper.",
+      "paper_authors": [
+        "White RT",
+        "Bakker S",
+        "Burton M",
+        "Castro ML",
+        "Couldrey C",
+        "Dyet K",
+        "Eustace A",
+        "Harland C",
+        "Hutton S",
+        "Macartney-Coxson D",
+        "Tarring C",
+        "Velasco C",
+        "Voss EM",
+        "Williamson J",
+        "Bloomfield M"
+      ],
+      "italics": [
+        "Staphylococcus aureus"
+      ]
     }
   ]
 }
