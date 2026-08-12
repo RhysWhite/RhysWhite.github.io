@@ -313,7 +313,8 @@
         "Bloomfield M"
       ],
       "italics": [
-        "Staphylococcus aureus"
+        "Staphylococcus aureus",
+        "Klebsiella variicola"
       ],
       "media": [
         {
@@ -321,6 +322,76 @@
           "title": "Genome sequencing developed to trace COVID is now protecting babies in intensive care from infectious diseases",
           "url": "https://theconversation.com/genome-sequencing-developed-to-trace-covid-is-now-protecting-babies-in-intensive-care-from-infectious-diseases-240299",
           "date": "2024-10-20"
+        }
+      ],
+      "related": [
+        {
+          "slug": "klebsiella-variicola-outbreak-hidden-from-resistance-surveillance",
+          "text": "A subsequent neonatal investigation showed how sequencing exposed a wild-type Klebsiella variicola outbreak that antimicrobial-resistance surveillance had not flagged."
+        }
+      ]
+    },
+    {
+      "slug": "klebsiella-variicola-outbreak-hidden-from-resistance-surveillance",
+      "doi": "10.1186/s13756-025-01529-2",
+      "status": "published",
+      "note_date": "2026-08-13",
+      "paper_date": "2025-02-07",
+      "headline": "Sequencing found an outbreak that resistance surveillance did not flag",
+      "standfirst": "Four bloodstream infections in a neonatal intensive care unit initially appeared to involve Klebsiella pneumoniae with wild-type antimicrobial susceptibility. Within 48 hours, local nanopore sequencing showed something different: three isolates were actually Klebsiella variicola, and two belonged to the same previously unseen sequence type. Further investigation connected the outbreak cluster to two more infants and two hospital sink traps.",
+      "short_version": "Outbreak surveillance often focuses on organisms with unusual antimicrobial resistance. These bacteria had no such warning signal. Sequencing showed that an organism with a wild-type susceptibility profile, initially identified as another Klebsiella species, was spreading in a neonatal unit. The outbreak was detected when only two linked cases were known.",
+      "question": "In May 2024, infection prevention and control staff at Wellington Regional Hospital were alerted to four cases of Klebsiella pneumoniae bloodstream infection in the neonatal intensive care unit over the preceding month. The isolates were resistant only to amoxicillin and therefore had not triggered multidrug-resistant-organism surveillance. Because the number of infections was nevertheless unusual, the laboratory brought forward its weekly nanopore sequencing run. We wanted to determine whether the cases represented transmission and, if so, define the outbreak rapidly enough to support the response.",
+      "findings": [
+        "Within 48 hours of notification, sequencing showed that three of the four isolates were actually Klebsiella variicola. Two belonged to ST6385, a sequence type not previously seen at the hospital. That was enough to raise suspicion of transmission and trigger further investigation.",
+        "Prospective sequencing then identified two additional infants carrying Klebsiella variicola ST6385. Environmental sampling recovered the same sequence type from two of six sink-trap water samples. In total, the genomic outbreak cluster comprised isolates from four infants and two sink traps. Two infants had bloodstream infections.",
+        "High-resolution analysis showed that the six ST6385 genomes formed a distinct cluster compared with other local Klebsiella variicola. The two sink isolates differed from the index infant by only zero and one SNV, while most of the larger differences in two other isolates were concentrated in regions attributed to recombination.",
+        "Affected sink traps were disinfected, cleaning procedures were revised and hand hygiene was reinforced. No further outbreak isolates were detected, and the investigation was closed after two months."
+      ],
+      "meaning": [
+        "This outbreak had none of the features that would normally make an organism stand out in antimicrobial-resistance surveillance. The bacteria had a wild-type susceptibility profile, and routine identification initially labelled several isolates as Klebsiella pneumoniae. Sequencing supplied a different signal: these organisms were unusual because they were genomically related, not because they were drug resistant.",
+        "That distinction is important for infection prevention. Genomic surveillance can identify transmission that phenotype-based surveillance may not flag, particularly when an uncommon organism is misidentified or lacks distinctive resistance markers.",
+        "The investigation also demonstrates how local and reference-laboratory genomics can complement one another. Rapid sequence typing at the hospital generated an actionable signal within 48 hours, while subsequent high-resolution analysis at ESR provided the genomic evidence needed to define the cluster precisely."
+      ],
+      "limitations": [
+        "Finding ST6385 in two sink traps establishes that the hospital water environment acted as a reservoir, but it does not establish the exact direction or sequence of transmission between sinks and infants. The precise role of the sinks in transmission therefore remains uncertain.",
+        "Infants were not systematically screened for the outbreak organism, partly because there was no validated screening method for this strain with a wild-type susceptibility profile. Additional colonized infants may therefore have gone undetected. Environmental sampling was also opportunistic rather than exhaustive, so other reservoirs could have been missed."
+      ],
+      "credit": "This collaborative investigation brought together the Institute of Environmental Science and Research (ESR), now PHF Science, Awanui Labs Wellington and Health New Zealand Te Whatu Ora. Max Bloomfield and I conceptualized and investigated the study. I led the methodology, formal genomic analysis and visualization, shared data curation with Max, and Max and I prepared the original manuscript together. Full author contributions, affiliations and funding information are provided in the published paper.",
+      "paper_authors": [
+        "White RT",
+        "Balm M",
+        "Burton M",
+        "Hutton S",
+        "Jeram J",
+        "Kelly M",
+        "Macartney-Coxson D",
+        "Sinha T",
+        "Sushames H",
+        "Winter DJ",
+        "Bloomfield MG"
+      ],
+      "italics": [
+        "Klebsiella variicola",
+        "Klebsiella pneumoniae"
+      ],
+      "media": [
+        {
+          "outlet": "The Conversation",
+          "title": "Genome sequencing developed to trace COVID is now protecting babies in intensive care from infectious diseases",
+          "url": "https://theconversation.com/genome-sequencing-developed-to-trace-covid-is-now-protecting-babies-in-intensive-care-from-infectious-diseases-240299",
+          "date": "2024-10-20"
+        },
+        {
+          "outlet": "Global Health NOW",
+          "title": "Frontline Genomics With AI: Nanopores, Lifesaving Diagnostics, and Squiggles",
+          "url": "https://globalhealthnow.org/2026-01/frontline-genomics-ai-nanopores-lifesaving-diagnostics-and-squiggles",
+          "date": "2026-01-12"
+        }
+      ],
+      "related": [
+        {
+          "slug": "mrsa-nicu-outbreak-prospective-sequencing",
+          "text": "An earlier neonatal investigation showed how prospective sequencing detected an MRSA outbreak when only two cases were known."
         }
       ]
     }
