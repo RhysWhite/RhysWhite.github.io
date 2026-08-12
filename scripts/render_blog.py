@@ -232,21 +232,15 @@ def render_paper(pub: dict) -> str:
 
 
 def retrospective_label(post: dict, pub: dict) -> str:
-    note_date = parse_iso_date(str(post["note_date"]), "note_date")
+    if post.get("paper_date"):
+        published = human_date(str(post["paper_date"]))
+        return f"Paper published {published} · Research note"
+
     pub_year = int(pub.get("year") or 0)
+    if pub_year:
+        return f"Paper published {pub_year} · Research note"
 
-    if pub_year and pub_year < note_date.year:
-        if post.get("paper_date"):
-            published = human_date(str(post["paper_date"]))
-        else:
-            published = str(pub_year)
-
-        return (
-            f"From the archive · Paper published {published} · "
-            f"Research note added {human_date(str(post['note_date']))}"
-        )
-
-    return f"Research note · {human_date(str(post['note_date']))}"
+    return "Research note"
 
 
 def note_text(value: object, post: dict) -> str:
