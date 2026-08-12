@@ -24,6 +24,9 @@
         "Enterococcus faecium",
         "Klebsiella variicola",
         "vanB"
+      ],
+      "paper_authors": [
+        "White RT"
       ]
     },
     {
@@ -48,7 +51,24 @@
         "Klebsiella pneumoniae",
         "Klebsiella"
       ],
-      "media": []
+      "media": [],
+      "paper_authors": [
+        "White RT",
+        "Bakker S",
+        "Burton M",
+        "Dyet K",
+        "Elvy J",
+        "Eustace A",
+        "Griffith MP",
+        "Hutton S",
+        "Lees J",
+        "Raabe NJ",
+        "Su B",
+        "Tiong A",
+        "Winter DJ",
+        "Wyres KL",
+        "Bloomfield M"
+      ]
     },
     {
       "status": "published",
@@ -78,7 +98,17 @@
         "Citrobacter",
         "blaKPC-2"
       ],
-      "media": []
+      "media": [],
+      "paper_authors": [
+        "Sauerborn E",
+        "White RT",
+        "Kalteis AL",
+        "Gygax D",
+        "Foster-Nyarko E",
+        "Wantia N",
+        "Gebhardt F",
+        "Urban L"
+      ]
     }
   ]
 }

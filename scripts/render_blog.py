@@ -205,10 +205,33 @@ def render_media(media: list[dict]) -> str:
     )
 
 
-def render_paper(pub: dict) -> str:
+def render_paper(post: dict, pub: dict) -> str:
     doi = str(pub.get("doi") or "").strip()
     title = rich_title(str(pub.get("title") or ""))
-    authors = rich_authors(str(pub.get("authors") or ""))
+
+    raw_authors = post.get("paper_authors", [])
+
+    if raw_authors:
+        if not isinstance(raw_authors, list):
+            raise ValueError("paper_authors must be a list.")
+
+        author_names = [
+            str(author).strip()
+            for author in raw_authors
+            if str(author).strip()
+        ]
+
+        shown = author_names[:3]
+        authors = ", ".join(
+            rich_authors(author)
+            for author in shown
+        )
+
+        if len(author_names) > 3:
+            authors += " et al."
+    else:
+        authors = rich_authors(str(pub.get("authors") or ""))
+
     journal = esc(pub.get("journal"))
     citation = esc(pub.get("citation"))
     year = esc(pub.get("year"))
@@ -229,7 +252,6 @@ def render_paper(pub: dict) -> str:
         f'<a class="button" href="https://doi.org/{esc(doi)}">Read the paper →</a>'
         '</section>'
     )
-
 
 def retrospective_label(post: dict, pub: dict) -> str:
     if post.get("paper_date"):
@@ -333,7 +355,7 @@ def render_post(post: dict, pub: dict) -> str:
 <p>{note_text(post["limitations"], post)}</p>
 </section>
 
-{render_paper(pub)}
+{render_paper(post, pub)}
 
 <section class="note-section">
 <h2>Credit</h2>
