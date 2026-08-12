@@ -1,0 +1,60 @@
+name: Refresh publication metrics
+
+on:
+  workflow_run:
+    workflows:
+      - Refresh publications
+    types:
+      - completed
+    branches:
+      - master
+
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    if: >
+      github.event_name != 'workflow_run' ||
+      github.event.workflow_run.conclusion == 'success'
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out current website
+        uses: actions/checkout@v4
+        with:
+          ref: master
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Refresh OpenAlex citation metrics
+        run: python scripts/update_publication_metrics.py
+
+      - name: Render publication pages
+        run: python scripts/render_publications.py
+
+      - name: Commit updated citation metrics
+        run: |
+          set -euo pipefail
+
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git add \
+            data/publication-metrics.json \
+            publications/index.html \
+            cv/index.html
+
+          if git diff --cached --quiet; then
+            echo "No publication metric changes to commit."
+            exit 0
+          fi
+
+          git commit -m "chore: refresh OpenAlex publication metrics"
+          git push
