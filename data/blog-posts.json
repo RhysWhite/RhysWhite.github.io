@@ -203,7 +203,71 @@
         "White RT"
       ],
       "italics": [
-        "Escherichia coli"
+        "Escherichia coli",
+        "blaOXA-48"
+      ],
+      "related": [
+        {
+          "slug": "oxa48-three-layers-resistance-spread",
+          "text": "A deeper genomic analysis of the same outbreak resolved the Col156 plasmid and the multilayered dissemination of blaOXA-48."
+        }
+      ]
+    },
+    {
+      "slug": "oxa48-three-layers-resistance-spread",
+      "doi": "10.1016/j.drup.2025.101327",
+      "status": "published",
+      "note_date": "2026-08-13",
+      "paper_date": "2025-11-19",
+      "headline": "One outbreak revealed three layers of resistance spread",
+      "standfirst": "The public-health investigation showed where the Hutt Valley outbreak was propagating. Complete genomes then showed something different: how the resistance itself was moving. The outbreak clone carried blaOXA-48 on a tiny Col156 plasmid, while global comparisons showed the same resistance gene occurring across different plasmids, bacterial hosts and even chromosomes.",
+      "short_version": "A bacterial outbreak, a resistance plasmid and a resistance gene are related, but they are not the same epidemiological unit. In New Zealand, the outbreak was primarily an expansion of one Escherichia coli ST131 clone carrying a blaOXA-48 Col156 plasmid. Globally, however, blaOXA-48 occurs across many plasmid backbones, bacterial genera and chromosomal contexts. Tracking only the bacterial strain would therefore miss part of how resistance spreads.",
+      "question": "The earlier public-health investigation linked this OXA-48-producing ST131 outbreak to a community food premises, but most isolates had been analysed using short-read sequencing. That established that the bacteria were closely related, but provided less information about the complete structure and evolutionary history of the DNA carrying the resistance gene. We wanted to resolve blaOXA-48 in complete genomes, determine how it became associated with the outbreak clone, and then ask how that plasmid and the resistance gene fitted into global patterns of antimicrobial-resistance dissemination.",
+      "findings": [
+        "The New Zealand outbreak clone most likely emerged around 2017. In 39 of 40 outbreak isolates, blaOXA-48 was associated with a compact 7,872-bp Col156 plasmid. Long-read sequencing also revealed one important exception: in one outbreak isolate, blaOXA-48 was integrated into the bacterial chromosome rather than carried on the Col156 plasmid. The outbreak therefore represented clonal expansion after acquisition of the resistance element, rather than evidence that the plasmid was repeatedly transferring between outbreak cases.",
+        "We compared 543 Col156 plasmids from 37 countries. The blaOXA-48-positive Col156 plasmids formed one highly conserved cluster containing plasmids from several bacterial species and multiple countries. Their genomic structure was consistent with a single IS1-mediated insertion of blaOXA-48 into this Col156 lineage, with the earliest public member of the cluster dating to 2017.",
+        "We then analysed 806 global blaOXA-48-positive sequences. Of these, 767 were plasmid-derived and 39 were chromosomal. The gene occurred across 30 plasmid incompatibility types, nine bacterial genera and at least 33 countries and regions, with 26 distinct insertion-sequence or transposon configurations around blaOXA-48."
+      ],
+      "meaning": [
+        "Resistance can spread at several interconnected levels. A mobile element can move a resistance gene into a new genomic location. A plasmid carrying that gene can occur in different bacterial hosts. And once a successful bacterium acquires the resistance element, the bacterial clone itself can expand.",
+        "Those processes can occur together, but they are not interchangeable. In this outbreak, the immediate epidemiological event was predominantly clonal expansion of ST131 carrying the Col156 plasmid. The global analysis showed the broader mobility of the plasmid and blaOXA-48 itself.",
+        "That distinction affects genomic surveillance. A bacterial phylogeny can tell us how strains are related, but it cannot by itself describe every movement of a plasmid or resistance gene. Conversely, detecting blaOXA-48 tells us that the resistance determinant is present, but not whether two cases involve the same bacterial clone, the same plasmid, or separate acquisitions of the gene."
+      ],
+      "limitations": [
+        "The global datasets are not prevalence surveys. They depend heavily on genomes that researchers and surveillance systems have sequenced and deposited publicly, so countries and settings with greater sequencing capacity are overrepresented. Community carriage and environmental reservoirs were also incompletely sampled in the New Zealand surveillance data.",
+        "We did not experimentally test the mobility or long-term stability of the outbreak-associated Col156 plasmid in different bacterial hosts. Incomplete epidemiological metadata also prevent reconstruction of every individual transmission event. Most importantly, finding the same plasmid lineage across species and countries does not mean that plasmid transfer occurred between patients during the New Zealand outbreak. The local outbreak data support clonal expansion of ST131."
+      ],
+      "credit": "This study brought together PHF Science, Health New Zealand Te Whatu Ora, Awanui Labs Wellington and Dunedin, and the University of Waikato. I co-designed the research project with Zuyu Yang. My contribution included genomic analysis, method development, data curation, validation, visualization and preparation of the manuscript. Full author contributions, affiliations and funding information are provided in the published paper.",
+      "paper_authors": [
+        "White RT",
+        "Thornley CN",
+        "Bloomfield M",
+        "Dyet K",
+        "Elvy J",
+        "Perez H",
+        "Hardaker A",
+        "Harrington M",
+        "Jackson S",
+        "Kelly M",
+        "Mangalasseril L",
+        "Nesdale A",
+        "Ren X",
+        "Szeto J",
+        "Underwood C",
+        "Winter D",
+        "Woodhouse R",
+        "Yang Z"
+      ],
+      "italics": [
+        "Escherichia coli",
+        "blaOXA-48"
+      ],
+      "citation_year": 2026,
+      "related": [
+        {
+          "slug": "oxa48-outbreak-community-food-premises",
+          "text": "The companion public-health investigation describes how epidemiology, food-handler screening and genomics pointed to a community food premises."
+        }
       ]
     }
   ]

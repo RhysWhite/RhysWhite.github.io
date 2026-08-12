@@ -263,7 +263,7 @@ def render_paper(post: dict, pub: dict) -> str:
 
     journal = esc(pub.get("journal"))
     citation = esc(pub.get("citation"))
-    year = esc(pub.get("year"))
+    year = esc(post.get("citation_year") or pub.get("year"))
 
     metadata = [authors]
     if journal:
@@ -363,6 +363,7 @@ def render_post(post: dict, pub: dict) -> str:
     )
 
     media = render_media(post.get("media", []))
+    related = render_related(post)
 
     return f'''<!doctype html>
 <html lang="en-NZ">
@@ -423,7 +424,7 @@ def render_post(post: dict, pub: dict) -> str:
 <p>{note_text(post["credit"], post)}</p>
 </section>
 
-{media}
+{related}{media}
 
 <p class="note-back"><a href="/blog/">← All research notes</a></p>
 
@@ -434,6 +435,39 @@ def render_post(post: dict, pub: dict) -> str:
 <script src="/assets/js/site.js"></script>
 </body>
 </html>'''
+
+
+def render_related(post: dict) -> str:
+    related = post.get("related", [])
+
+    if not related:
+        return ""
+
+    items = []
+
+    for item in related:
+        if not isinstance(item, dict):
+            raise ValueError("Blog post related entries must be objects.")
+
+        slug = str(item.get("slug") or "").strip()
+        text = str(item.get("text") or "").strip()
+
+        if not slug or not text:
+            raise ValueError(
+                "Blog post related entries require slug and text."
+            )
+
+        items.append(
+            f'<p><a href="/blog/posts/{esc(slug)}/">'
+            f'{note_text(text, post)} →</a></p>'
+        )
+
+    return (
+        '<section class="note-section">'
+        '<h2>Related research</h2>'
+        + "".join(items)
+        + '</section>'
+    )
 
 
 def render_paragraphs(value, post: dict) -> str:
