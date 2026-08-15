@@ -357,3 +357,10 @@ h1 { margin: 0; font-size: clamp(3rem, 7vw, 6.4rem); max-width: 12ch; }
 .output-attention { display: flex; align-items: center; gap: 12px; min-height: 48px; margin: 18px 0 4px; padding-top: 16px; border-top: 1px solid var(--line); }
 .output-attention > span { color: var(--muted); font-size: .72rem; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; }
 .output-attention .altmetric-embed { min-height: 44px; }
+
+/* Disabled software action retained to preserve matching card layout. */
+.button[aria-disabled="true"] {
+  opacity: 0.55;
+  cursor: default;
+  pointer-events: none;
+}
