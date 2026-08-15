@@ -653,3 +653,10 @@ h1 { margin: 0; font-size: clamp(3rem, 7vw, 6.4rem); max-width: 12ch; }
   font-weight: 760;
   text-decoration: none;
 }
+
+/* Disabled software action retained to preserve matching card layout. */
+.button[aria-disabled="true"] {
+  opacity: 0.55;
+  cursor: default;
+  pointer-events: none;
+}
