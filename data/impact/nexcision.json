@@ -1,27 +1,27 @@
 {
-  "updated": "2026-08-15T05:25:19.715655889Z",
+  "updated": "2026-08-15T05:30:25.750148508Z",
   "source": "boast",
-  "snapshot": "20260815T052519Z-doi-10.64898-2026.07.26.740842.json",
+  "snapshot": "20260815T053025Z-doi-10.64898-2026.07.26.740842.json",
   "metrics": {
     "citations": {
       "value": 0,
       "provider": "openalex",
-      "as_of": "2026-08-15T05:24:18.858331151Z"
+      "as_of": "2026-08-15T05:30:22.187472852Z"
     },
     "stars": {
       "value": 1,
       "provider": "github",
-      "as_of": "2026-08-15T05:24:17.874297505Z"
+      "as_of": "2026-08-15T05:30:22.184733192Z"
     },
     "release_downloads": {
       "value": 0,
       "provider": "github",
-      "as_of": "2026-08-15T05:24:17.874297505Z"
+      "as_of": "2026-08-15T05:30:22.184733192Z"
     },
     "downloads": {
       "value": 44,
       "provider": "bioconda",
-      "as_of": "2026-08-15T05:24:17.792687121Z"
+      "as_of": "2026-08-15T05:30:22.069586409Z"
     }
   }
 }
