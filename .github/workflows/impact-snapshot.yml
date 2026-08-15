@@ -15,6 +15,7 @@ env:
 jobs:
   snapshot:
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v4
 
@@ -25,36 +26,63 @@ jobs:
           echo "$HOME/.cargo/bin" >> "$GITHUB_PATH"
 
       - name: Collect NEXCISION reach snapshot
-        id: boast
+        id: boast_nexcision
         continue-on-error: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           ALTMETRIC_KEY: ${{ secrets.ALTMETRIC_KEY }}
-        run: boast about impact/nexcision.toml --snapshot-dir impact/snapshots --wait-for-cohort-ranks=5m
+        run: |
+          boast about impact/nexcision.toml \
+            --snapshot-dir impact/snapshots/nexcision \
+            --wait-for-cohort-ranks=5m
 
-      - name: Update website metrics from newest snapshot
+      - name: Collect BRANCHSNV reach snapshot
+        id: boast_branchsnv
+        continue-on-error: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ALTMETRIC_KEY: ${{ secrets.ALTMETRIC_KEY }}
+        run: |
+          boast about impact/branchsnv.toml \
+            --snapshot-dir impact/snapshots/branchsnv \
+            --wait-for-cohort-ranks=5m
+
+      - name: Update website metrics from newest snapshots
         if: always()
         run: |
           set -euo pipefail
-          if find impact/snapshots -maxdepth 1 -name '*.json' -print -quit | grep -q .; then
-            python scripts/boast_to_site.py impact/snapshots data/impact/nexcision.json
+
+          if find impact/snapshots/nexcision -maxdepth 1 -name '*.json' -print -quit 2>/dev/null | grep -q .; then
+            python scripts/boast_to_site.py \
+              nexcision \
+              impact/snapshots/nexcision \
+              data/impact/nexcision.json
           else
-            echo "No boast snapshot was written; retaining last-known-good website metrics."
+            echo "No NEXCISION snapshot was written; retaining last-known-good website metrics."
           fi
 
-      - name: Commit snapshot and site metrics
+          if find impact/snapshots/branchsnv -maxdepth 1 -name '*.json' -print -quit 2>/dev/null | grep -q .; then
+            python scripts/boast_to_site.py \
+              branchsnv \
+              impact/snapshots/branchsnv \
+              data/impact/branchsnv.json
+          else
+            echo "No BRANCHSNV snapshot was written; retaining last-known-good website metrics."
+          fi
+
+      - name: Commit snapshots and site metrics
         if: always()
         run: |
           set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add impact/snapshots data/impact/nexcision.json
+          git add -A impact/snapshots data/impact
           git diff --cached --quiet && exit 0
           git commit -m "chore: monthly research software reach snapshot"
           git push
 
       - name: Surface provider failures
-        if: steps.boast.outcome == 'failure'
+        if: ${{ always() && (steps.boast_nexcision.outcome == 'failure' || steps.boast_branchsnv.outcome == 'failure') }}
         run: |
-          echo "boast recorded one or more provider failures. Any partial snapshot was still preserved." >&2
+          echo "boast recorded one or more provider failures. Any partial snapshots were still preserved." >&2
           exit 1

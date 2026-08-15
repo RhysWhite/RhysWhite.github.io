@@ -1,0 +1,27 @@
+{
+  "updated": "2026-08-15T05:18:21.212643068Z",
+  "source": "boast",
+  "snapshot": "20260815T051821Z-doi-10.5281-zenodo.21919038.json",
+  "metrics": {
+    "citations": {
+      "value": 0,
+      "provider": "openalex",
+      "as_of": "2026-08-15T05:17:18.207915222Z"
+    },
+    "stars": {
+      "value": 1,
+      "provider": "github",
+      "as_of": "2026-08-15T05:17:17.451779382Z"
+    },
+    "release_downloads": {
+      "value": 0,
+      "provider": "github",
+      "as_of": "2026-08-15T05:17:17.451779382Z"
+    },
+    "pypi_downloads": {
+      "value": 95,
+      "provider": "pypi",
+      "as_of": "2026-08-15T05:17:18.808316154Z"
+    }
+  }
+}

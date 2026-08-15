@@ -1,0 +1,7 @@
+[[project]]
+identities = [
+  "doi:10.5281/zenodo.21919038",
+  "github:RhysWhite/branchsnv",
+  "pypi:branchsnv",
+  "conda:bioconda/branchsnv",
+]
