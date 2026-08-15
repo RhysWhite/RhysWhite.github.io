@@ -11,6 +11,7 @@ from typing import Any
 PROJECTS = {
     "nexcision": {
         ("conda:bioconda/nexcision", "downloads"): "downloads",
+        ("pypi:nexcision", "downloads"): "pypi_downloads",
         ("github:rhyswhite/nexcision", "release_downloads"): "release_downloads",
         ("github:rhyswhite/nexcision", "stars"): "stars",
         ("doi:10.64898/2026.07.26.740842", "citations"): "citations",
