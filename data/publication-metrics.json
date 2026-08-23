@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-18T12:52:58.271757+00:00",
+  "updated": "2026-08-23T04:02:33.557367+00:00",
   "provider": "openalex",
   "metrics": {
     "10.1038/s41467-024-45608-1": {
@@ -8,7 +8,7 @@
       "openalex_id": "https://openalex.org/W4391808092"
     },
     "10.3389/fmicb.2020.01968": {
-      "citations": 64,
+      "citations": 65,
       "provider": "openalex",
       "openalex_id": "https://openalex.org/W3082530379"
     },
@@ -32,18 +32,18 @@
       "provider": "openalex",
       "openalex_id": "https://openalex.org/W4400356623"
     },
+    "10.1038/s41467-024-48933-7": {
+      "citations": 15,
+      "provider": "openalex",
+      "openalex_id": "https://openalex.org/W4399022086"
+    },
     "10.1071/ma21031": {
       "citations": 14,
       "provider": "openalex",
       "openalex_id": "https://openalex.org/W3196331115"
     },
-    "10.1038/s41467-024-48933-7": {
-      "citations": 14,
-      "provider": "openalex",
-      "openalex_id": "https://openalex.org/W4399022086"
-    },
     "10.1186/s13756-025-01529-2": {
-      "citations": 13,
+      "citations": 14,
       "provider": "openalex",
       "openalex_id": "https://openalex.org/W4407251928"
     },
