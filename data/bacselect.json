@@ -1,0 +1,33 @@
+{
+  "foundation": {
+    "eligible_genomes": 55306,
+    "species_groups": 13765,
+    "structural_features": 12
+  },
+  "monthly_release": {
+    "next_scheduled_update_utc": "2026-09-01T00:00:00Z",
+    "published": false,
+    "release": null,
+    "status_label": "First monthly release pending"
+  },
+  "panel": {
+    "max_n": 500,
+    "min_n": 10,
+    "presets": [
+      10,
+      20,
+      50,
+      100,
+      200,
+      500
+    ]
+  },
+  "reference_panel": {
+    "selector": "OPS",
+    "selector_version": "1.0.0",
+    "validated": true
+  },
+  "resource": "BacSelect",
+  "schema_version": 1,
+  "source": "https://bacselect.github.io/data/site.json"
+}

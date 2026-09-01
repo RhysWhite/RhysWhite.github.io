@@ -1,0 +1,73 @@
+name: Sync BacSelect release metadata
+
+on:
+  # Poll several times per day so a delayed monthly release is picked up
+  # promptly. Nothing is committed or deployed unless canonical metadata changes.
+  schedule:
+    - cron: '20 */6 * * *'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Check out current website
+        uses: actions/checkout@v4
+        with:
+          ref: master
+          fetch-depth: 0
+
+      - name: Sync canonical BacSelect metadata
+        run: |
+          set -euo pipefail
+          python3 scripts/sync_bacselect.py \
+            --url https://bacselect.github.io/data/site.json \
+            --output data/bacselect.json \
+            --render-root .
+
+      - name: Commit BacSelect metadata change
+        id: commit
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add \
+            data/bacselect.json \
+            index.html \
+            software/index.html
+          if git diff --cached --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "Canonical BacSelect metadata is unchanged."
+            exit 0
+          fi
+          git commit -m "chore: sync BacSelect release metadata"
+          git pull --rebase origin master
+          git push origin HEAD:master
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+
+      - name: Configure GitHub Pages
+        if: steps.commit.outputs.changed == 'true'
+        uses: actions/configure-pages@v5
+
+      - name: Upload static website
+        if: steps.commit.outputs.changed == 'true'
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: '.'
+
+      - name: Deploy updated website
+        if: steps.commit.outputs.changed == 'true'
+        id: deployment
+        uses: actions/deploy-pages@v4

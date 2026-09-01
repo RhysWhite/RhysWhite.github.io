@@ -744,3 +744,33 @@ h1 { margin: 0; font-size: clamp(3rem, 7vw, 6.4rem); max-width: 12ch; }
   .bacselect-card-head { grid-template-columns: 76px minmax(0,1fr); gap: 18px; }
   .bacselect-card-head img { width: 76px; height: 76px; }
 }
+
+/* BacSelect canonical metadata status */
+.bacselect-live {
+  margin-top: 18px;
+  padding: 14px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  border: 1px solid #d9d0ff;
+  border-radius: 12px;
+  background: rgba(255,255,255,.78);
+}
+.bacselect-live > div { min-width: 0; }
+.bacselect-live-label {
+  display: block;
+  margin-bottom: 3px;
+  color: #777c87;
+  font-size: .70rem;
+  font-weight: 760;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+.bacselect-live strong { display: block; color: #191b21; line-height: 1.3; }
+.bacselect-live a { flex: 0 0 auto; color: #5434c9; font-weight: 760; text-decoration: none; }
+.bacselect-live a:hover { text-decoration: underline; }
+
+@media (max-width: 760px) {
+  .bacselect-live { align-items: flex-start; flex-direction: column; gap: 10px; }
+}
