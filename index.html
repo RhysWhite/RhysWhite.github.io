@@ -22,7 +22,7 @@
 <article class="research-card"><div><span class="kicker">01 · Transmission</span><h3>Outbreak or coincidence?</h3></div><div><p>High-resolution genomes can confirm transmission, rule it out, or expose a reservoir routine surveillance did not see.</p><a href="/research/#surveillance">Genomic surveillance →</a></div></article>
 <article class="research-card"><div><span class="kicker">02 · AMR</span><h3>Clone or mobile element?</h3></div><div><p>Plasmids and other mobile elements can move resistance across bacterial backgrounds that look unrelated on the chromosome.</p><a href="/research/#mobile-elements">Mobile resistance →</a></div></article>
 <article class="research-card"><div><span class="kicker">03 · Evolution</span><h3>Which changes define the lineage?</h3></div><div><p>Phylogenomics connects bacterial relationships to the genomic changes that accompany emergence, persistence and expansion.</p><a href="/research/#phylogenomics">Phylogenomics →</a></div></article>
-<article class="research-card"><div><span class="kicker">04 · Methods</span><h3>Can the inference be checked?</h3></div><div><p>Focused software makes fragile analytical steps explicit, reproducible and testable.</p><a href="/software/">Research software →</a></div></article>
+<article class="research-card"><div><span class="kicker">04 · Methods</span><h3>Can the inference be checked?</h3></div><div><p>Focused software and genomic resources make fragile analytical choices explicit, reproducible and testable.</p><a href="/software/">Software + resources →</a></div></article>
 </div></div></section>
 <section class="section white"><div class="container"><div class="section-head"><h2>Selected studies</h2><p class="section-intro">Results that changed the interpretation of transmission, resistance or bacterial evolution.</p></div><div class="work-grid">
 <article class="work-card"><div class="year">2025</div><div><h3>A neonatal outbreak hidden behind wild-type susceptibility</h3><p>Rapid local sequencing identified <i>Klebsiella variicola</i>, linked four neonatal cases, and placed sink isolates in the same genomic cluster.</p><a class="paper-link" href="https://doi.org/10.1186/s13756-025-01529-2">Read the study →</a></div></article>
@@ -30,6 +30,27 @@
 <article class="work-card"><div class="year">2024</div><div><h3>Geography inside a pandemic <i>E. coli</i> lineage</h3><p>Genomic epidemiology revealed geographical clustering within multidrug-resistant ST131 associated with bacteraemia in Wales.</p><a class="paper-link" href="https://doi.org/10.1038/s41467-024-45608-1">Read the study →</a></div></article>
 <article class="work-card"><div class="year">2026</div><div><h3>Plasmid reservoirs inside a hospital</h3><p>Nanopore sequencing resolved plasmid-encoded carbapenem resistance dynamics and linked resistance to its genomic reservoirs.</p><a class="paper-link" href="https://doi.org/10.1099/mgen.0.001644">Read the study →</a></div></article>
 </div></div></section>
+<!-- BACSELECT:HOME -->
+<section class="section bacselect-home"><div class="container"><div class="bacselect-feature">
+  <div class="bacselect-visual" aria-label="BacSelect genomic landscape mark">
+    <img src="/assets/img/bacselect-mark.svg" alt="BacSelect">
+    <div class="bacselect-scale" aria-hidden="true"><span>N=10</span><i></i><span>N=500</span></div>
+  </div>
+  <div class="bacselect-copy">
+    <span class="badge bacselect-badge">Selector v1.0.0 · reference panels validated</span>
+    <p class="eyebrow">Public bacterial genome resource</p>
+    <h2>BacSelect</h2>
+    <p class="bacselect-tagline">Bacterial genome diversity, at the scale you need.</p>
+    <p>BacSelect turns genome-set choice into an explicit, deterministic step: choose how many complete bacterial genomes you can realistically analyse, then obtain a reproducible panel designed to span genome architecture while controlling the influence of heavily represented species.</p>
+    <div class="bacselect-facts" aria-label="BacSelect selector-v1 validation foundation">
+      <div><strong>55,306</strong><span>eligible complete genomes</span></div>
+      <div><strong>13,765</strong><span>species groups</span></div>
+      <div><strong>N=10–500</strong><span>nested reference panels</span></div>
+    </div>
+    <div class="software-links"><a class="button primary" href="https://bacselect.github.io/">Open BacSelect</a><a class="button" href="https://github.com/BacSelect/bacselect">Scientific repository</a></div>
+  </div>
+</div></div></section>
+<!-- /BACSELECT:HOME -->
 <section class="section"><div class="container software-feature"><div class="software-copy"><span class="badge">Released · Bioconda</span><h3>NEXCISION</h3><p>Precise excision of coordinate-labelled genomic sites from transposed NEXUS matrices, with deterministic provenance and SHA-256 checksums.</p><div class="metric-strip" data-impact="nexcision" hidden><div hidden><strong data-metric="downloads"></strong><span>Bioconda downloads</span></div><div hidden><strong data-metric="stars"></strong><span>GitHub stars</span></div><div hidden><strong data-metric="citations"></strong><span>OpenAlex citations</span></div></div><div class="software-links"><a class="button primary" href="https://github.com/RhysWhite/nexcision">NEXCISION</a><a class="button" href="/software/">Software + validation</a></div></div><div class="software-terminal" aria-label="Example NEXCISION command"><div class="terminal-top"><i></i><i></i><i></i></div><pre><span class="muted"># remove reference-defined regions</span>
 <span class="prompt">$</span> nexcise input.nex regions.tsv \
     --output filtered.nex \
