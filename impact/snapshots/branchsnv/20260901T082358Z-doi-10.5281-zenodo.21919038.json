@@ -1,0 +1,468 @@
+{
+  "schema_version": 2,
+  "tool": "boast",
+  "tool_version": "0.5.0",
+  "created_at": "2026-09-01T08:23:58.855945374Z",
+  "identities": [
+    "doi:10.5281/zenodo.21919038",
+    "github:RhysWhite/branchsnv",
+    "pypi:branchsnv",
+    "conda:bioconda/branchsnv"
+  ],
+  "results": [
+    {
+      "provider": "openalex",
+      "identity": "doi:10.5281/zenodo.21919038",
+      "category": "citations",
+      "outcome": {
+        "status": "values",
+        "metrics": [
+          {
+            "name": "citations",
+            "category": "citations",
+            "value": {
+              "type": "count",
+              "value": 0
+            },
+            "window": {
+              "kind": "cumulative"
+            },
+            "provider": "openalex",
+            "identity": "doi:10.5281/zenodo.21919038",
+            "as_of": "2026-09-01T08:23:53.622567607Z",
+            "source": "https://api.openalex.org/works/doi:10.5281/zenodo.21919038"
+          },
+          {
+            "name": "open_access",
+            "category": "attention",
+            "value": {
+              "type": "text",
+              "value": "green"
+            },
+            "window": {
+              "kind": "cumulative"
+            },
+            "provider": "openalex",
+            "identity": "doi:10.5281/zenodo.21919038",
+            "as_of": "2026-09-01T08:23:53.622567607Z",
+            "source": "https://api.openalex.org/works/doi:10.5281/zenodo.21919038",
+            "note": "OpenAlex open-access status; \"closed\" means no open-access copy found"
+          }
+        ]
+      }
+    },
+    {
+      "provider": "crossref",
+      "identity": "doi:10.5281/zenodo.21919038",
+      "category": "citations",
+      "outcome": {
+        "status": "not_applicable",
+        "note": "not found in Crossref"
+      }
+    },
+    {
+      "provider": "dimensions",
+      "identity": "doi:10.5281/zenodo.21919038",
+      "category": "citations",
+      "outcome": {
+        "status": "not_applicable",
+        "note": "not found in Dimensions"
+      }
+    },
+    {
+      "provider": "europe_pmc",
+      "identity": "doi:10.5281/zenodo.21919038",
+      "category": "citations",
+      "outcome": {
+        "status": "not_applicable",
+        "note": "not found in Europe PMC"
+      }
+    },
+    {
+      "provider": "wikipedia",
+      "identity": "doi:10.5281/zenodo.21919038",
+      "category": "attention",
+      "outcome": {
+        "status": "values",
+        "metrics": [
+          {
+            "name": "wikipedia_mentions",
+            "category": "attention",
+            "value": {
+              "type": "count",
+              "value": 0
+            },
+            "window": {
+              "kind": "cumulative"
+            },
+            "provider": "wikipedia",
+            "identity": "doi:10.5281/zenodo.21919038",
+            "as_of": "2026-09-01T08:23:53.666091538Z",
+            "source": "https://en.wikipedia.org/w/api.php?action=query&list=search&format=json&srlimit=1&srsearch=%2210.5281%2Fzenodo.21919038%22",
+            "note": "English Wikipedia full-text search hits for this DOI; other-language Wikipedias are not counted"
+          }
+        ]
+      }
+    },
+    {
+      "provider": "altmetric",
+      "identity": "doi:10.5281/zenodo.21919038",
+      "category": "attention",
+      "outcome": {
+        "status": "not_applicable",
+        "note": "Altmetric attention data not collected: no Details Page API key (ALTMETRIC_KEY). An institutional licence or Altmetric's SRAD program provides one."
+      }
+    },
+    {
+      "provider": "openalex",
+      "identity": "github:RhysWhite/branchsnv",
+      "category": "citations",
+      "outcome": {
+        "status": "values",
+        "metrics": [
+          {
+            "name": "mentions",
+            "category": "attention",
+            "value": {
+              "type": "count",
+              "value": 0
+            },
+            "window": {
+              "kind": "cumulative"
+            },
+            "provider": "openalex",
+            "identity": "github:RhysWhite/branchsnv",
+            "as_of": "2026-09-01T08:23:53.809825606Z",
+            "source": "https://api.openalex.org/works?filter=fulltext.search%3A%22github.com%2FRhysWhite%2Fbranchsnv%22%2Ctype%3Aarticle%7Cpreprint&per-page=1&select=id",
+            "note": "indexed full-text search estimate, not a formal citation or verified literal URL count; partial coverage; self-mentions are included; article/preprint versions may be counted separately"
+          }
+        ]
+      }
+    },
+    {
+      "provider": "europe_pmc",
+      "identity": "github:RhysWhite/branchsnv",
+      "category": "citations",
+      "outcome": {
+        "status": "values",
+        "metrics": [
+          {
+            "name": "mentions",
+            "category": "attention",
+            "value": {
+              "type": "count",
+              "value": 0
+            },
+            "window": {
+              "kind": "cumulative"
+            },
+            "provider": "europe_pmc",
+            "identity": "github:RhysWhite/branchsnv",
+            "as_of": "2026-09-01T08:23:54.017369109Z",
+            "source": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%22github.com%2FRhysWhite%2Fbranchsnv%22%20AND%20%28SRC%3AMED%20OR%20SRC%3APPR%29&pageSize=1&resultType=idlist&format=json",
+            "note": "indexed full-text search estimate, not a formal citation or verified literal URL count; partial coverage concentrated in life-sciences literature; self-mentions are included; journal article/preprint versions may be counted separately"
+          }
+        ]
+      }
+    },
+    {
+      "provider": "github",
+      "identity": "github:RhysWhite/branchsnv",
+      "category": "code",
+      "outcome": {
+        "status": "values",
+        "metrics": [
+          {
+            "name": "stars",
+            "category": "code",
+            "value": {
+              "type": "count",
+              "value": 1
+            },
+            "window": {
+              "kind": "cumulative"
+            },
+            "provider": "github",
+            "identity": "github:RhysWhite/branchsnv",
+            "as_of": "2026-09-01T08:23:53.799858172Z",
+            "source": "https://api.github.com/repos/RhysWhite/branchsnv"
+          },
+          {
+            "name": "forks",
+            "category": "code",
+            "value": {
+              "type": "count",
+              "value": 0
+            },
+            "window": {
+              "kind": "cumulative"
+            },
+            "provider": "github",
+            "identity": "github:RhysWhite/branchsnv",
+            "as_of": "2026-09-01T08:23:53.799858172Z",
+            "source": "https://api.github.com/repos/RhysWhite/branchsnv"
+          },
+          {
+            "name": "watchers",
+            "category": "code",
+            "value": {
+              "type": "count",
+              "value": 0
+            },
+            "window": {
+              "kind": "cumulative"
+            },
+            "provider": "github",
+            "identity": "github:RhysWhite/branchsnv",
+            "as_of": "2026-09-01T08:23:53.799858172Z",
+            "source": "https://api.github.com/repos/RhysWhite/branchsnv",
+            "note": "users watching the repo (subscribers)"
+          },
+          {
+            "name": "repo_age_years",
+            "category": "code",
+            "value": {
+              "type": "real",
+              "value": 0.08854938271604938
+            },
+            "window": {
+              "kind": "cumulative"
+            },
+            "provider": "github",
+            "identity": "github:RhysWhite/branchsnv",
+            "as_of": "2026-09-01T08:23:53.799858172Z",
+            "source": "https://api.github.com/repos/RhysWhite/branchsnv",
+            "note": "since 2026-07-31"
+          },
+          {
+            "name": "contributors",
+            "category": "code",
+            "value": {
+              "type": "count",
+              "value": 2
+            },
+            "window": {
+              "kind": "cumulative"
+            },
+            "provider": "github",
+            "identity": "github:RhysWhite/branchsnv",
+            "as_of": "2026-09-01T08:23:53.799858172Z",
+            "source": "https://api.github.com/repos/RhysWhite/branchsnv/contributors?per_page=1&anon=true"
+          },
+          {
+            "name": "release_downloads",
+            "category": "code",
+            "value": {
+              "type": "count",
+              "value": 0
+            },
+            "window": {
+              "kind": "cumulative"
+            },
+            "provider": "github",
+            "identity": "github:RhysWhite/branchsnv",
+            "as_of": "2026-09-01T08:23:53.799858172Z",
+            "source": "https://api.github.com/repos/RhysWhite/branchsnv/releases?per_page=100",
+            "note": "summed across release assets"
+          },
+          {
+            "name": "cohort_rank (bacterial-genomics)",
+            "category": "code",
+            "value": {
+              "type": "count",
+              "value": 16
+            },
+            "window": {
+              "kind": "cumulative"
+            },
+            "provider": "github",
+            "identity": "github:RhysWhite/branchsnv",
+            "as_of": "2026-09-01T08:23:53.799858172Z",
+            "source": "https://api.github.com/search/repositories?q=topic:bacterial-genomics+stars:%3E1&per_page=1",
+            "note": "#16 of 54 repos tagged 'bacterial-genomics'; GitHub topics are inconsistently applied"
+          },
+          {
+            "name": "cohort_rank (bioinformatics)",
+            "category": "code",
+            "value": {
+              "type": "count",
+              "value": 6319
+            },
+            "window": {
+              "kind": "cumulative"
+            },
+            "provider": "github",
+            "identity": "github:RhysWhite/branchsnv",
+            "as_of": "2026-09-01T08:23:53.799858172Z",
+            "source": "https://api.github.com/search/repositories?q=topic:bioinformatics+stars:%3E1&per_page=1",
+            "note": "#6319 of 16280 repos tagged 'bioinformatics'; GitHub topics are inconsistently applied"
+          },
+          {
+            "name": "cohort_rank (command-line-tool)",
+            "category": "code",
+            "value": {
+              "type": "count",
+              "value": 4382
+            },
+            "window": {
+              "kind": "cumulative"
+            },
+            "provider": "github",
+            "identity": "github:RhysWhite/branchsnv",
+            "as_of": "2026-09-01T08:23:53.799858172Z",
+            "source": "https://api.github.com/search/repositories?q=topic:command-line-tool+stars:%3E1&per_page=1",
+            "note": "#4382 of 9463 repos tagged 'command-line-tool'; GitHub topics are inconsistently applied"
+          },
+          {
+            "name": "cohort_rank (newick)",
+            "category": "code",
+            "value": {
+              "type": "count",
+              "value": 14
+            },
+            "window": {
+              "kind": "cumulative"
+            },
+            "provider": "github",
+            "identity": "github:RhysWhite/branchsnv",
+            "as_of": "2026-09-01T08:23:53.799858172Z",
+            "source": "https://api.github.com/search/repositories?q=topic:newick+stars:%3E1&per_page=1",
+            "note": "#14 of 35 repos tagged 'newick'; GitHub topics are inconsistently applied"
+          },
+          {
+            "name": "cohort_rank (nexus-format)",
+            "category": "code",
+            "value": {
+              "type": "count",
+              "value": 1
+            },
+            "window": {
+              "kind": "cumulative"
+            },
+            "provider": "github",
+            "identity": "github:RhysWhite/branchsnv",
+            "as_of": "2026-09-01T08:23:53.799858172Z",
+            "source": "https://api.github.com/search/repositories?q=topic:nexus-format+stars:%3E1&per_page=1",
+            "note": "#1 of 1 repos tagged 'nexus-format'; GitHub topics are inconsistently applied"
+          },
+          {
+            "name": "cohort_rank (phylogenetics)",
+            "category": "code",
+            "value": {
+              "type": "count",
+              "value": 380
+            },
+            "window": {
+              "kind": "cumulative"
+            },
+            "provider": "github",
+            "identity": "github:RhysWhite/branchsnv",
+            "as_of": "2026-09-01T08:23:53.799858172Z",
+            "source": "https://api.github.com/search/repositories?q=topic:phylogenetics+stars:%3E1&per_page=1",
+            "note": "#380 of 795 repos tagged 'phylogenetics'; GitHub topics are inconsistently applied"
+          },
+          {
+            "name": "cohort_rank (python)",
+            "category": "code",
+            "value": {
+              "type": "count",
+              "value": 217668
+            },
+            "window": {
+              "kind": "cumulative"
+            },
+            "provider": "github",
+            "identity": "github:RhysWhite/branchsnv",
+            "as_of": "2026-09-01T08:23:53.799858172Z",
+            "source": "https://api.github.com/search/repositories?q=topic:python+stars:%3E1&per_page=1",
+            "note": "#217668 of 853403 repos tagged 'python'; GitHub topics are inconsistently applied"
+          },
+          {
+            "name": "cohort_rank (reproducible-research)",
+            "category": "code",
+            "value": {
+              "type": "count",
+              "value": 1166
+            },
+            "window": {
+              "kind": "cumulative"
+            },
+            "provider": "github",
+            "identity": "github:RhysWhite/branchsnv",
+            "as_of": "2026-09-01T08:23:53.799858172Z",
+            "source": "https://api.github.com/search/repositories?q=topic:reproducible-research+stars:%3E1&per_page=1",
+            "note": "#1166 of 5467 repos tagged 'reproducible-research'; GitHub topics are inconsistently applied"
+          },
+          {
+            "name": "cohort_rank (snv)",
+            "category": "code",
+            "value": {
+              "type": "count",
+              "value": 28
+            },
+            "window": {
+              "kind": "cumulative"
+            },
+            "provider": "github",
+            "identity": "github:RhysWhite/branchsnv",
+            "as_of": "2026-09-01T08:23:53.799858172Z",
+            "source": "https://api.github.com/search/repositories?q=topic:snv+stars:%3E1&per_page=1",
+            "note": "#28 of 55 repos tagged 'snv'; GitHub topics are inconsistently applied"
+          }
+        ]
+      }
+    },
+    {
+      "provider": "pypi",
+      "identity": "pypi:branchsnv",
+      "category": "downloads",
+      "outcome": {
+        "status": "values",
+        "metrics": [
+          {
+            "name": "downloads",
+            "category": "downloads",
+            "value": {
+              "type": "count",
+              "value": 137
+            },
+            "window": {
+              "kind": "trailing",
+              "days": 30
+            },
+            "provider": "pypi",
+            "identity": "pypi:branchsnv",
+            "as_of": "2026-09-01T08:23:53.706487798Z",
+            "source": "https://pypistats.org/api/packages/branchsnv/recent",
+            "note": "pypistats' \"last month\" bucket; treated as trailing 30 days since pypistats doesn't publish an exact day boundary for it"
+          }
+        ]
+      }
+    },
+    {
+      "provider": "anaconda",
+      "identity": "conda:bioconda/branchsnv",
+      "category": "downloads",
+      "outcome": {
+        "status": "values",
+        "metrics": [
+          {
+            "name": "downloads",
+            "category": "downloads",
+            "value": {
+              "type": "count",
+              "value": 34
+            },
+            "window": {
+              "kind": "cumulative"
+            },
+            "provider": "bioconda",
+            "identity": "conda:bioconda/branchsnv",
+            "as_of": "2026-09-01T08:23:53.595532899Z",
+            "source": "https://api.anaconda.org/package/bioconda/branchsnv"
+          }
+        ]
+      }
+    }
+  ]
+}

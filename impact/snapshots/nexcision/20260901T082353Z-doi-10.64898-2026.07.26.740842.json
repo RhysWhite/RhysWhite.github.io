@@ -1,0 +1,498 @@
+{
+  "schema_version": 2,
+  "tool": "boast",
+  "tool_version": "0.5.0",
+  "created_at": "2026-09-01T08:23:53.525759392Z",
+  "identities": [
+    "doi:10.64898/2026.07.26.740842",
+    "github:RhysWhite/nexcision",
+    "pypi:nexcision",
+    "conda:bioconda/nexcision"
+  ],
+  "results": [
+    {
+      "provider": "openalex",
+      "identity": "doi:10.64898/2026.07.26.740842",
+      "category": "citations",
+      "outcome": {
+        "status": "values",
+        "metrics": [
+          {
+            "name": "citations",
+            "category": "citations",
+            "value": {
+              "type": "count",
+              "value": 0
+            },
+            "window": {
+              "kind": "cumulative"
+            },
+            "provider": "openalex",
+            "identity": "doi:10.64898/2026.07.26.740842",
+            "as_of": "2026-09-01T08:23:49.654991449Z",
+            "source": "https://api.openalex.org/works/doi:10.64898/2026.07.26.740842"
+          },
+          {
+            "name": "open_access",
+            "category": "attention",
+            "value": {
+              "type": "text",
+              "value": "green"
+            },
+            "window": {
+              "kind": "cumulative"
+            },
+            "provider": "openalex",
+            "identity": "doi:10.64898/2026.07.26.740842",
+            "as_of": "2026-09-01T08:23:49.654991449Z",
+            "source": "https://api.openalex.org/works/doi:10.64898/2026.07.26.740842",
+            "note": "OpenAlex open-access status; \"closed\" means no open-access copy found"
+          }
+        ]
+      }
+    },
+    {
+      "provider": "crossref",
+      "identity": "doi:10.64898/2026.07.26.740842",
+      "category": "citations",
+      "outcome": {
+        "status": "values",
+        "metrics": [
+          {
+            "name": "citations",
+            "category": "citations",
+            "value": {
+              "type": "count",
+              "value": 0
+            },
+            "window": {
+              "kind": "cumulative"
+            },
+            "provider": "crossref",
+            "identity": "doi:10.64898/2026.07.26.740842",
+            "as_of": "2026-09-01T08:23:49.765446993Z",
+            "source": "https://api.crossref.org/works/10.64898/2026.07.26.740842",
+            "note": "times referenced, per Crossref"
+          }
+        ],
+        "metadata": {
+          "identity": "doi:10.64898/2026.07.26.740842",
+          "title": "NEXCISION: exact, validated, and scalable excision of genomic regions from phylogenomic NEXUS matrices",
+          "authors": [
+            "Rhys T. White"
+          ],
+          "year": 2026,
+          "provider": "crossref",
+          "source": "https://api.crossref.org/works/10.64898/2026.07.26.740842"
+        }
+      }
+    },
+    {
+      "provider": "dimensions",
+      "identity": "doi:10.64898/2026.07.26.740842",
+      "category": "citations",
+      "outcome": {
+        "status": "values",
+        "metrics": [
+          {
+            "name": "citations",
+            "category": "citations",
+            "value": {
+              "type": "count",
+              "value": 0
+            },
+            "window": {
+              "kind": "cumulative"
+            },
+            "provider": "dimensions",
+            "identity": "doi:10.64898/2026.07.26.740842",
+            "as_of": "2026-09-01T08:23:49.828237438Z",
+            "source": "https://metrics-api.dimensions.ai/doi/10.64898/2026.07.26.740842",
+            "note": "This data has been sourced via the Dimensions Metrics API, use of which is subject to the terms at https://dimensions.ai/policies/terms/metrics/. Any use by an unregistered organization is not authorized. Please contact info@dimensions.ai for further information."
+          },
+          {
+            "name": "recent_citations",
+            "category": "citations",
+            "value": {
+              "type": "count",
+              "value": 0
+            },
+            "window": {
+              "kind": "periodic",
+              "label": "last two calendar years"
+            },
+            "provider": "dimensions",
+            "identity": "doi:10.64898/2026.07.26.740842",
+            "as_of": "2026-09-01T08:23:49.828237438Z",
+            "source": "https://metrics-api.dimensions.ai/doi/10.64898/2026.07.26.740842",
+            "note": "resets each 1 January; not a rolling 24-month window"
+          }
+        ]
+      }
+    },
+    {
+      "provider": "europe_pmc",
+      "identity": "doi:10.64898/2026.07.26.740842",
+      "category": "citations",
+      "outcome": {
+        "status": "values",
+        "metrics": [
+          {
+            "name": "citations",
+            "category": "citations",
+            "value": {
+              "type": "count",
+              "value": 0
+            },
+            "window": {
+              "kind": "cumulative"
+            },
+            "provider": "europe_pmc",
+            "identity": "doi:10.64898/2026.07.26.740842",
+            "as_of": "2026-09-01T08:23:50.255742465Z",
+            "source": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI:10.64898/2026.07.26.740842&format=json",
+            "note": "citation count from Europe PMC"
+          }
+        ]
+      }
+    },
+    {
+      "provider": "wikipedia",
+      "identity": "doi:10.64898/2026.07.26.740842",
+      "category": "attention",
+      "outcome": {
+        "status": "values",
+        "metrics": [
+          {
+            "name": "wikipedia_mentions",
+            "category": "attention",
+            "value": {
+              "type": "count",
+              "value": 0
+            },
+            "window": {
+              "kind": "cumulative"
+            },
+            "provider": "wikipedia",
+            "identity": "doi:10.64898/2026.07.26.740842",
+            "as_of": "2026-09-01T08:23:49.639628344Z",
+            "source": "https://en.wikipedia.org/w/api.php?action=query&list=search&format=json&srlimit=1&srsearch=%2210.64898%2F2026.07.26.740842%22",
+            "note": "English Wikipedia full-text search hits for this DOI; other-language Wikipedias are not counted"
+          }
+        ]
+      }
+    },
+    {
+      "provider": "altmetric",
+      "identity": "doi:10.64898/2026.07.26.740842",
+      "category": "attention",
+      "outcome": {
+        "status": "not_applicable",
+        "note": "Altmetric attention data not collected: no Details Page API key (ALTMETRIC_KEY). An institutional licence or Altmetric's SRAD program provides one."
+      }
+    },
+    {
+      "provider": "openalex",
+      "identity": "github:RhysWhite/nexcision",
+      "category": "citations",
+      "outcome": {
+        "status": "values",
+        "metrics": [
+          {
+            "name": "mentions",
+            "category": "attention",
+            "value": {
+              "type": "count",
+              "value": 1
+            },
+            "window": {
+              "kind": "cumulative"
+            },
+            "provider": "openalex",
+            "identity": "github:RhysWhite/nexcision",
+            "as_of": "2026-09-01T08:23:49.789950816Z",
+            "source": "https://api.openalex.org/works?filter=fulltext.search%3A%22github.com%2FRhysWhite%2Fnexcision%22%2Ctype%3Aarticle%7Cpreprint&per-page=1&select=id",
+            "note": "indexed full-text search estimate, not a formal citation or verified literal URL count; partial coverage; self-mentions are included; article/preprint versions may be counted separately"
+          }
+        ]
+      }
+    },
+    {
+      "provider": "europe_pmc",
+      "identity": "github:RhysWhite/nexcision",
+      "category": "citations",
+      "outcome": {
+        "status": "values",
+        "metrics": [
+          {
+            "name": "mentions",
+            "category": "attention",
+            "value": {
+              "type": "count",
+              "value": 1
+            },
+            "window": {
+              "kind": "cumulative"
+            },
+            "provider": "europe_pmc",
+            "identity": "github:RhysWhite/nexcision",
+            "as_of": "2026-09-01T08:23:50.86591049Z",
+            "source": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%22github.com%2FRhysWhite%2Fnexcision%22%20AND%20%28SRC%3AMED%20OR%20SRC%3APPR%29&pageSize=1&resultType=idlist&format=json",
+            "note": "indexed full-text search estimate, not a formal citation or verified literal URL count; partial coverage concentrated in life-sciences literature; self-mentions are included; journal article/preprint versions may be counted separately"
+          }
+        ]
+      }
+    },
+    {
+      "provider": "github",
+      "identity": "github:RhysWhite/nexcision",
+      "category": "code",
+      "outcome": {
+        "status": "values",
+        "metrics": [
+          {
+            "name": "stars",
+            "category": "code",
+            "value": {
+              "type": "count",
+              "value": 1
+            },
+            "window": {
+              "kind": "cumulative"
+            },
+            "provider": "github",
+            "identity": "github:RhysWhite/nexcision",
+            "as_of": "2026-09-01T08:23:49.794864873Z",
+            "source": "https://api.github.com/repos/RhysWhite/nexcision"
+          },
+          {
+            "name": "forks",
+            "category": "code",
+            "value": {
+              "type": "count",
+              "value": 0
+            },
+            "window": {
+              "kind": "cumulative"
+            },
+            "provider": "github",
+            "identity": "github:RhysWhite/nexcision",
+            "as_of": "2026-09-01T08:23:49.794864873Z",
+            "source": "https://api.github.com/repos/RhysWhite/nexcision"
+          },
+          {
+            "name": "watchers",
+            "category": "code",
+            "value": {
+              "type": "count",
+              "value": 0
+            },
+            "window": {
+              "kind": "cumulative"
+            },
+            "provider": "github",
+            "identity": "github:RhysWhite/nexcision",
+            "as_of": "2026-09-01T08:23:49.794864873Z",
+            "source": "https://api.github.com/repos/RhysWhite/nexcision",
+            "note": "users watching the repo (subscribers)"
+          },
+          {
+            "name": "repo_age_years",
+            "category": "code",
+            "value": {
+              "type": "real",
+              "value": 0.11593159809364463
+            },
+            "window": {
+              "kind": "cumulative"
+            },
+            "provider": "github",
+            "identity": "github:RhysWhite/nexcision",
+            "as_of": "2026-09-01T08:23:49.794864873Z",
+            "source": "https://api.github.com/repos/RhysWhite/nexcision",
+            "note": "since 2026-07-21"
+          },
+          {
+            "name": "contributors",
+            "category": "code",
+            "value": {
+              "type": "count",
+              "value": 1
+            },
+            "window": {
+              "kind": "cumulative"
+            },
+            "provider": "github",
+            "identity": "github:RhysWhite/nexcision",
+            "as_of": "2026-09-01T08:23:49.794864873Z",
+            "source": "https://api.github.com/repos/RhysWhite/nexcision/contributors?per_page=1&anon=true"
+          },
+          {
+            "name": "release_downloads",
+            "category": "code",
+            "value": {
+              "type": "count",
+              "value": 0
+            },
+            "window": {
+              "kind": "cumulative"
+            },
+            "provider": "github",
+            "identity": "github:RhysWhite/nexcision",
+            "as_of": "2026-09-01T08:23:49.794864873Z",
+            "source": "https://api.github.com/repos/RhysWhite/nexcision/releases?per_page=100",
+            "note": "summed across release assets"
+          },
+          {
+            "name": "cohort_rank (bioinformatics)",
+            "category": "code",
+            "value": {
+              "type": "count",
+              "value": 6319
+            },
+            "window": {
+              "kind": "cumulative"
+            },
+            "provider": "github",
+            "identity": "github:RhysWhite/nexcision",
+            "as_of": "2026-09-01T08:23:49.794864873Z",
+            "source": "https://api.github.com/search/repositories?q=topic:bioinformatics+stars:%3E1&per_page=1",
+            "note": "#6319 of 16280 repos tagged 'bioinformatics'; GitHub topics are inconsistently applied"
+          },
+          {
+            "name": "cohort_rank (genomics)",
+            "category": "code",
+            "value": {
+              "type": "count",
+              "value": 1953
+            },
+            "window": {
+              "kind": "cumulative"
+            },
+            "provider": "github",
+            "identity": "github:RhysWhite/nexcision",
+            "as_of": "2026-09-01T08:23:49.794864873Z",
+            "source": "https://api.github.com/search/repositories?q=topic:genomics+stars:%3E1&per_page=1",
+            "note": "#1953 of 4546 repos tagged 'genomics'; GitHub topics are inconsistently applied"
+          },
+          {
+            "name": "cohort_rank (nexus)",
+            "category": "code",
+            "value": {
+              "type": "count",
+              "value": 372
+            },
+            "window": {
+              "kind": "cumulative"
+            },
+            "provider": "github",
+            "identity": "github:RhysWhite/nexcision",
+            "as_of": "2026-09-01T08:23:49.794864873Z",
+            "source": "https://api.github.com/search/repositories?q=topic:nexus+stars:%3E1&per_page=1",
+            "note": "#372 of 949 repos tagged 'nexus'; GitHub topics are inconsistently applied"
+          },
+          {
+            "name": "cohort_rank (phylogenetics)",
+            "category": "code",
+            "value": {
+              "type": "count",
+              "value": 380
+            },
+            "window": {
+              "kind": "cumulative"
+            },
+            "provider": "github",
+            "identity": "github:RhysWhite/nexcision",
+            "as_of": "2026-09-01T08:23:49.794864873Z",
+            "source": "https://api.github.com/search/repositories?q=topic:phylogenetics+stars:%3E1&per_page=1",
+            "note": "#380 of 795 repos tagged 'phylogenetics'; GitHub topics are inconsistently applied"
+          },
+          {
+            "name": "cohort_rank (python)",
+            "category": "code",
+            "value": {
+              "type": "count",
+              "value": 217668
+            },
+            "window": {
+              "kind": "cumulative"
+            },
+            "provider": "github",
+            "identity": "github:RhysWhite/nexcision",
+            "as_of": "2026-09-01T08:23:49.794864873Z",
+            "source": "https://api.github.com/search/repositories?q=topic:python+stars:%3E1&per_page=1",
+            "note": "#217668 of 853403 repos tagged 'python'; GitHub topics are inconsistently applied"
+          },
+          {
+            "name": "cohort_rank (recombination)",
+            "category": "code",
+            "value": {
+              "type": "count",
+              "value": 32
+            },
+            "window": {
+              "kind": "cumulative"
+            },
+            "provider": "github",
+            "identity": "github:RhysWhite/nexcision",
+            "as_of": "2026-09-01T08:23:49.794864873Z",
+            "source": "https://api.github.com/search/repositories?q=topic:recombination+stars:%3E1&per_page=1",
+            "note": "#32 of 57 repos tagged 'recombination'; GitHub topics are inconsistently applied"
+          }
+        ]
+      }
+    },
+    {
+      "provider": "pypi",
+      "identity": "pypi:nexcision",
+      "category": "downloads",
+      "outcome": {
+        "status": "values",
+        "metrics": [
+          {
+            "name": "downloads",
+            "category": "downloads",
+            "value": {
+              "type": "count",
+              "value": 162
+            },
+            "window": {
+              "kind": "trailing",
+              "days": 30
+            },
+            "provider": "pypi",
+            "identity": "pypi:nexcision",
+            "as_of": "2026-09-01T08:23:53.363550599Z",
+            "source": "https://pypistats.org/api/packages/nexcision/recent",
+            "note": "pypistats' \"last month\" bucket; treated as trailing 30 days since pypistats doesn't publish an exact day boundary for it"
+          }
+        ]
+      }
+    },
+    {
+      "provider": "anaconda",
+      "identity": "conda:bioconda/nexcision",
+      "category": "downloads",
+      "outcome": {
+        "status": "values",
+        "metrics": [
+          {
+            "name": "downloads",
+            "category": "downloads",
+            "value": {
+              "type": "count",
+              "value": 66
+            },
+            "window": {
+              "kind": "cumulative"
+            },
+            "provider": "bioconda",
+            "identity": "conda:bioconda/nexcision",
+            "as_of": "2026-09-01T08:23:49.772471463Z",
+            "source": "https://api.anaconda.org/package/bioconda/nexcision"
+          }
+        ]
+      }
+    }
+  ]
+}
