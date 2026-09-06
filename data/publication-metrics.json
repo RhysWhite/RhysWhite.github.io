@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-30T09:16:31.904942+00:00",
+  "updated": "2026-09-06T07:56:01.443473+00:00",
   "provider": "openalex",
   "metrics": {
     "10.1038/s41467-024-45608-1": {
@@ -57,16 +57,6 @@
       "provider": "openalex",
       "openalex_id": "https://openalex.org/W4416427192"
     },
-    "10.1016/j.jhin.2025.06.004": {
-      "citations": 4,
-      "provider": "openalex",
-      "openalex_id": "https://openalex.org/W4411589579"
-    },
-    "10.1099/mgen.0.001644": {
-      "citations": 3,
-      "provider": "openalex",
-      "openalex_id": "https://openalex.org/W7128690917"
-    },
     "10.3390/pathogens10121543": {
       "citations": 16,
       "provider": "openalex",
@@ -86,6 +76,16 @@
       "citations": 4,
       "provider": "openalex",
       "openalex_id": "https://openalex.org/W4403541283"
+    },
+    "10.1016/j.jhin.2025.06.004": {
+      "citations": 4,
+      "provider": "openalex",
+      "openalex_id": "https://openalex.org/W4411589579"
+    },
+    "10.1099/mgen.0.001644": {
+      "citations": 3,
+      "provider": "openalex",
+      "openalex_id": "https://openalex.org/W7128690917"
     },
     "10.1016/j.jhin.2025.11.020": {
       "citations": 2,
@@ -117,15 +117,15 @@
       "provider": "openalex",
       "openalex_id": "https://openalex.org/W4412653460"
     },
-    "10.1128/msphere.00376-25": {
-      "citations": 1,
-      "provider": "openalex",
-      "openalex_id": "https://openalex.org/W4414425448"
-    },
     "10.1016/j.ijantimicag.2026.107801": {
       "citations": 1,
       "provider": "openalex",
       "openalex_id": "https://openalex.org/W7148379670"
+    },
+    "10.1128/msphere.00376-25": {
+      "citations": 1,
+      "provider": "openalex",
+      "openalex_id": "https://openalex.org/W4414425448"
     },
     "10.64898/2026.02.16.706128": {
       "citations": 1,
