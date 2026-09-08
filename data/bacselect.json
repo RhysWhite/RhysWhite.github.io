@@ -5,10 +5,10 @@
     "structural_features": 12
   },
   "monthly_release": {
-    "next_scheduled_update_utc": "2026-09-01T00:00:00Z",
-    "published": false,
-    "release": null,
-    "status_label": "First monthly release pending"
+    "next_scheduled_update_utc": "2026-10-01T00:00:00Z",
+    "published": true,
+    "release": "2026.09",
+    "status_label": "Current monthly release"
   },
   "panel": {
     "max_n": 500,
