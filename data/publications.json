@@ -1,6 +1,6 @@
 {
   "orcid": "0000-0001-6620-758X",
-  "generated": "2026-09-20",
+  "generated": "2026-09-27",
   "publications": [
     {
       "year": 2026,
@@ -130,6 +130,22 @@
       "journal": "bioRxiv",
       "citation": "2026.02.16.706128",
       "type": "preprint"
+    },
+    {
+      "year": 2026,
+      "title": "Nanopore metagenomic sequencing links clinically relevant resistance determinants to pathogens",
+      "journal": "Microbial Genomics",
+      "doi": "10.1099/mgen.0.001834",
+      "source": "orcid",
+      "authors": "Ürel H, Sauerborn E, Biggel M et al.",
+      "citation": "12(9)",
+      "tags": [
+        "mobile",
+        "implementation"
+      ],
+      "labels": [
+        "nanopore"
+      ]
     },
     {
       "year": 2025,
