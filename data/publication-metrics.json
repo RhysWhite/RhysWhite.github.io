@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-04T09:50:48.363921+00:00",
+  "updated": "2026-10-11T10:03:05.055558+00:00",
   "provider": "openalex",
   "metrics": {
     "10.1038/s41467-024-45608-1": {
@@ -13,32 +13,32 @@
       "openalex_id": "https://openalex.org/W4407251928"
     },
     "10.3389/fmicb.2020.01968": {
-      "citations": 65,
+      "citations": 62,
       "provider": "openalex",
       "openalex_id": "https://openalex.org/W3082530379"
     },
     "10.1099/mgen.0.000888": {
-      "citations": 25,
+      "citations": 23,
       "provider": "openalex",
       "openalex_id": "https://openalex.org/W4307033842"
     },
     "10.1099/mgen.0.001072": {
-      "citations": 19,
+      "citations": 17,
       "provider": "openalex",
       "openalex_id": "https://openalex.org/W4385186366"
-    },
-    "10.1099/mgen.0.001273": {
-      "citations": 18,
-      "provider": "openalex",
-      "openalex_id": "https://openalex.org/W4400356623"
     },
     "10.1017/ice.2024.77": {
       "citations": 17,
       "provider": "openalex",
       "openalex_id": "https://openalex.org/W4396675706"
     },
-    "10.1038/s41467-024-48933-7": {
+    "10.1099/mgen.0.001273": {
       "citations": 16,
+      "provider": "openalex",
+      "openalex_id": "https://openalex.org/W4400356623"
+    },
+    "10.1038/s41467-024-48933-7": {
+      "citations": 15,
       "provider": "openalex",
       "openalex_id": "https://openalex.org/W4399022086"
     },
@@ -48,7 +48,7 @@
       "openalex_id": "https://openalex.org/W3196331115"
     },
     "10.3201/eid3107.250289": {
-      "citations": 7,
+      "citations": 6,
       "provider": "openalex",
       "openalex_id": "https://openalex.org/W4411604010"
     },
@@ -78,7 +78,7 @@
       "openalex_id": "https://openalex.org/W4376113217"
     },
     "10.1016/j.jhin.2025.06.004": {
-      "citations": 4,
+      "citations": 6,
       "provider": "openalex",
       "openalex_id": "https://openalex.org/W4411589579"
     },
@@ -133,7 +133,7 @@
       "openalex_id": "https://openalex.org/W7148379670"
     },
     "10.64898/2026.02.16.706128": {
-      "citations": 1,
+      "citations": 2,
       "provider": "openalex",
       "openalex_id": "https://openalex.org/W7130332326"
     },
