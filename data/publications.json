@@ -1,6 +1,6 @@
 {
   "orcid": "0000-0001-6620-758X",
-  "generated": "2026-10-25",
+  "generated": "2026-11-01",
   "publications": [
     {
       "year": 2026,
@@ -145,6 +145,21 @@
       ],
       "labels": [
         "nanopore"
+      ]
+    },
+    {
+      "year": 2026,
+      "title": "Calibrating public genome archives for AMR surveillance: four decades of redundancy-aware phylogenomics of pandemic Escherichia coli ST131",
+      "journal": "Drug Resistance Updates",
+      "doi": "10.1016/j.drup.2026.101497",
+      "source": "orcid",
+      "authors": "White RT, Biggs PJ, Burgess SA et al.",
+      "citation": "101497",
+      "tags": [
+        "population"
+      ],
+      "labels": [
+        "ST131"
       ]
     },
     {
